@@ -22,6 +22,7 @@ import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.j
 
 import heroData from 'content/hero.json'
 import landingData from 'content/landingContent.json'
+import {info} from "next/dist/build/output/log";
 
 const dashboardRoutes = [];
 
@@ -30,8 +31,8 @@ const useStyles = makeStyles(styles);
 export default function LandingPage(props) {
   const classes = useStyles();
   const {title, subtitle} = heroData
-    console.log(landingData)
   const { ...rest } = props;
+  const infoSections = landingData.map((info) => <InfoSection props={info}/>)
   return (
     <div>
       <Header
@@ -67,8 +68,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <InfoSection props={landingData["landing-content"][0]}/>
-          <InfoSection props={landingData["landing-content"][1]}/>
+            {infoSections}
           <div id="contact">
               <ContactSection />
           </div>
