@@ -18,7 +18,6 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
 import InfoSection from "pages-sections/LandingPage-Sections/InfoSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.js";
 
 import heroData from 'content/hero.json'
@@ -47,7 +46,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter responsive image={require("public/img/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

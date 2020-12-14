@@ -18,8 +18,20 @@ const imagesStyles = {
     marginBottom: "2.142rem"
   },
   imgCardTop: {
+    objectFit: "cover",
+    maxHeight: "200px",
     width: "100%",
     borderTopLeftRadius: "calc(.25rem - 1px)",
+    borderTopRightRadius: "calc(.25rem - 1px)"
+  },
+  imgCardLeft: {
+    width: "100%",
+    borderBottomLeftRadius: "calc(.25rem - 1px)",
+    borderTopLeftRadius: "calc(.25rem - 1px)"
+  },
+  imgCardRight: {
+    width: "100%",
+    borderBottomRightRadius: "calc(.25rem - 1px)",
     borderTopRightRadius: "calc(.25rem - 1px)"
   },
   imgCardBottom: {
