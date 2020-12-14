@@ -19,7 +19,7 @@ const imagesStyles = {
   },
   imgCardTop: {
     objectFit: "cover",
-    maxHeight: "200px",
+    maxHeight: "300px",
     width: "100%",
     borderTopLeftRadius: "calc(.25rem - 1px)",
     borderTopRightRadius: "calc(.25rem - 1px)"

@@ -67,9 +67,8 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-
-          <InfoSection props={landingData["landing-content"][0]}>
-          </InfoSection>
+          <InfoSection props={landingData["landing-content"][0]}/>
+          <InfoSection props={landingData["landing-content"][1]}/>
           <div id="contact">
               <ContactSection />
           </div>
