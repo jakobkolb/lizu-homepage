@@ -23,7 +23,7 @@ export default function ContactSection() {
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Kontakt</h2>
           <h4 className={classes.description}>
-            Wir freuen uns über eine Nachricht und Melden uns umgehend zurück.
+            Wir freuen uns über eine Nachricht und melden uns umgehend zurück.
           </h4>
           <form>
             <GridContainer>
@@ -58,7 +58,7 @@ export default function ContactSection() {
                 }}
               />
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                <Button color="primary">Send Message</Button>
+                <Button color="primary">Absenden</Button>
               </GridItem>
             </GridContainer>
           </form>

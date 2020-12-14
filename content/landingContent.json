@@ -1,0 +1,12 @@
+{
+  "landing-content": [
+    {
+      "id": "Concept",
+      "value": {
+        "headline": "KONZEPT",
+        "image": "assets/img/bg.jpg",
+        "text": "Lorem ipsum.."
+      }
+    }
+  ]
+}

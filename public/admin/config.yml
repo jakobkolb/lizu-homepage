@@ -1,15 +1,36 @@
 backend:
   name: git-gateway
   branch: master
+local_backend: true
 media_folder: assets/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "landing"
+    label: "Landing Page"
     files:
-      - label: "Hero"
+      - file: "content/hero.json"
+        label: "Hero"
         name: "hero"
-        file: "content/hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - file: "content/landing.json"
+        label: "Landing Content"
+        name: "landing-content"
+        widget: "list"
+        default: []
+        identifier_fild: "id"
+        fields:
+          - label: "Title"
+            name: "id"
+            widget: "string"
+          - name: "content"
+            widget: "object"
+            fields:
+              - { name: "headline", widget: "string" }
+              - {
+                name: "image",
+                widget: "image",
+                allow_multiple: false,
+              }
+              - { name: "text", widget: "text" }

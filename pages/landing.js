@@ -17,11 +17,12 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
+import InfoSection from "pages-sections/LandingPage-Sections/InfoSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
 import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.js";
 
-import {attributes as HeroAttributes } from 'content/hero.md'
+import heroData from 'content/hero.json'
+import landingData from 'content/landingContent.json'
 
 const dashboardRoutes = [];
 
@@ -29,7 +30,8 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const {title, subtitle} = HeroAttributes
+  const {title, subtitle} = heroData
+    console.log(landingData)
   const { ...rest } = props;
   return (
     <div>
@@ -66,8 +68,9 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
+
+          <InfoSection props={landingData["landing-content"][0]}>
+          </InfoSection>
           <div id="contact">
               <ContactSection />
           </div>
