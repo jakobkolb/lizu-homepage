@@ -20,12 +20,10 @@ collections:
         name: "landing-content"
         widget: "list"
         default: []
-        identifier_fild: "id"
+        identifier_field: "id"
         fields:
           - label: "Title"
             name: "id"
-            widget: "string"
-          - name: "content"
             widget: "object"
             fields:
               - { name: "headline", widget: "string" }
