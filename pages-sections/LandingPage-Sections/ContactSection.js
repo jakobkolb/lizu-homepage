@@ -11,27 +11,25 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
+import {CheckBox, CheckBoxOutlineBlank, RadioButtonChecked, RadioButtonUnchecked} from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
-export default function WorkSection() {
+export default function ContactSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
+          <h2 className={classes.title}>Kontakt</h2>
           <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
+            Wir freuen uns über eine Nachricht und Melden uns umgehend zurück.
           </h4>
           <form>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Name"
+                  labelText="Name"
                   id="name"
                   formControlProps={{
                     fullWidth: true
@@ -40,7 +38,7 @@ export default function WorkSection() {
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Your Email"
+                  labelText="Email"
                   id="email"
                   formControlProps={{
                     fullWidth: true
@@ -48,7 +46,7 @@ export default function WorkSection() {
                 />
               </GridItem>
               <CustomInput
-                labelText="Your Message"
+                labelText="Nachricht"
                 id="message"
                 formControlProps={{
                   fullWidth: true,

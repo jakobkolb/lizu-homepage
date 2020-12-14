@@ -1,6 +1,9 @@
 import { container, title } from "assets/jss/nextjs-material-kit.js";
 
 const landingPageStyle = {
+  html: {
+    scrollBehavior: "smooth"
+  },
   container: {
     zIndex: "12",
     color: "#FFFFFF",

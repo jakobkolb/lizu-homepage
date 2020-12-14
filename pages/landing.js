@@ -16,11 +16,12 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
-
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.js";
+
+import {attributes as HeroAttributes } from 'content/hero.md'
 
 const dashboardRoutes = [];
 
@@ -28,13 +29,14 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
+  const {title, subtitle} = HeroAttributes
   const { ...rest } = props;
   return (
     <div>
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand="Lieber Zusammen"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -47,23 +49,16 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
+              <h1 className={classes.title}>{title}</h1>
+              <h4>{subtitle}</h4>
               <br />
               <Button
-                color="danger"
+                color="primary"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contact"
               >
-                <i className="fas fa-play" />
-                Watch video
+                <i className="fas" />
+                Kontakt
               </Button>
             </GridItem>
           </GridContainer>
@@ -73,10 +68,20 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
-          <WorkSection />
+          <div id="contact">
+              <ContactSection />
+          </div>
         </div>
       </div>
       <Footer />
+
+        <style global jsx>
+            {`
+       html {
+          scroll-behavior: smooth;
+        }
+  `}
+        </style>
     </div>
   );
 }

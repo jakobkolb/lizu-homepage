@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit"
+        brand="Lieber Zusammen"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -65,9 +65,13 @@ export default function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
+      </div>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+
+          <SectionNavbars />
+          <SectionTabs />
+          <SectionPills />
         <SectionNotifications />
         <SectionTypography />
         <SectionJavascript />
