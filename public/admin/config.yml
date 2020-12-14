@@ -8,6 +8,13 @@ collections:
   - name: "landing"
     label: "Landing Page"
     files:
+
+      - file: "content/blogEntries.json"
+        label: "Hero"
+        name: "hero"
+        fields:
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
       - file: "content/hero.json"
         label: "Hero"
         name: "hero"
@@ -18,8 +25,6 @@ collections:
       - file: "content/landingContent.json"
         label: "Landing Content"
         name: "landing-content"
-        widget: "list"
-        summary: '{{fields.title}}'
         fields:
           - label: "Title"
             name: "title"

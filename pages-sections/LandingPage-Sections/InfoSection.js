@@ -8,7 +8,6 @@ const useStyles = makeStyles(styles);
 
 export default function InfoSection(props) {
   const classes = useStyles();
-  console.log(classes)
   const {content: {headline, image, imageCap, text}} = props.props
   return (
     <div className={classes.section}>
