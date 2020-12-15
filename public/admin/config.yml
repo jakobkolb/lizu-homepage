@@ -16,19 +16,11 @@ collections:
   - name: "landing"
     label: "Landing Page"
     files:
-      - file: "content/landing.json"
-        label: "Landing"
-        name: "landing"
-        create: "true"
-        widget: "list"
+      - file: "content/imprint.json"
+        label: "Impressum"
+        name: "imprint"
         fields:
-          - { label: "Quote", name: "quote", widget: "string", default: "Everything is awesome!" }
-          - label: "Author"
-            name: "author"
-            widget: "object"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Avatar", name: "avatar", widget: "image" }
+          - { label: "Orga und Anschrift", name: "imprint-content", widget: "markdown"}
 
       - file: "content/hero.json"
         label: "Hero"
@@ -36,6 +28,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Ssubtitle", name: "ssubtitle", widget: "string" }
 
       - file: "content/landingContent.json"
@@ -52,9 +45,10 @@ collections:
                 widget: "object"
                 fields:
                   - { name: "headline", widget: "string" }
+                  - { name: "image-alt", title: "Image Alt Text", widget: "string" }
                   - {
                     name: "image",
                     widget: "image",
                     allow_multiple: false,
                   }
-                  - { name: "text", widget: "text" }
+                  - { name: "text", widget: "markdown" }

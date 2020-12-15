@@ -22,7 +22,6 @@ import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.j
 
 import heroData from 'content/hero.json'
 import landingData from 'content/landingContent.json'
-import {info} from "next/dist/build/output/log";
 
 const dashboardRoutes = [];
 
@@ -30,9 +29,9 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const {title, subtitle} = heroData
+  const {title, subtitle, image} = heroData
   const { ...rest } = props;
-  const infoSections = landingData["landing-content"].map((info) => <InfoSection props={info}/>)
+  const infoSections = landingData["items"].map((info) => <InfoSection props={info}/>)
   return (
     <div>
       <Header
@@ -47,7 +46,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image={require("public/img/landing-bg.jpg")}>
+      <Parallax filter responsive image={require(image)}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
