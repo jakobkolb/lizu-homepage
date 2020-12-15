@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer/Footer.js'
 import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
-import InfoSection from 'src/pages-sections/LandingPage-Sections/InfoSection.jsx'
+import InfoSection from 'src/pages-sections/LandingPage-Sections/InfoSection.js'
 import ContactSection from 'src/pages-sections/LandingPage-Sections/ContactSection.js'
 
 import heroData from 'content/hero.json'
