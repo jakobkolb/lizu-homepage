@@ -32,7 +32,7 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const {title, subtitle} = heroData
   const { ...rest } = props;
-  const infoSections = landingData.map((info) => <InfoSection props={info}/>)
+  const infoSections = landingData["landing-content"].map((info) => <InfoSection props={info}/>)
   return (
     <div>
       <Header

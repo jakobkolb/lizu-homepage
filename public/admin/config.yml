@@ -20,9 +20,16 @@ collections:
       - file: "content/landing.json"
         label: "Landing"
         name: "landing"
+        widget: "list"
+        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: Quote, name: quote, widget: string, default: "Everything is awesome!" }
+          - label: Author
+            name: author
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Avatar, name: avatar, widget: image }
 
       - file: "content/hero.json"
         label: "Hero"
