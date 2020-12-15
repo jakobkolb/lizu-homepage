@@ -1,4 +1,7 @@
 {
-  "title": "WOHNPROJEKT HOPPEGARTEN",
-  "subtitle": "Eine Gemeinschaft in Entstehung."
+  "quote": "asdf",
+  "author": {
+    "name": "asdf",
+    "avatar": "/img/buckminster-fuller.jpg"
+  }
 }
