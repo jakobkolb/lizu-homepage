@@ -1,5 +1,3 @@
-import landingData from '../content/landingContent.json'
-import InfoSection from '../src/pages-sections/LandingPage-Sections/InfoSection'
 import Header from '../src/components/Header/Header'
 import HeaderLinks from '../src/components/Header/HeaderLinks'
 import Footer from '../src/components/Footer/Footer'
@@ -8,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import styles from 'src/assets/jss/nextjs-material-kit/pages/blogPage'
 import GridContainer from '../src/components/Grid/GridContainer'
 import GridItem from '../src/components/Grid/GridItem'
+import BlogContent from '../src/pages-sections/BlogPage-Sections/blogContentSection'
 
 const dashboardRoutes = []
 const useStyles = makeStyles(styles)
@@ -15,9 +14,6 @@ const useStyles = makeStyles(styles)
 export default function Blog(props) {
   const classes = useStyles()
   const { ...rest } = props
-  const infoSections = landingData['items'].map((info) => (
-    <InfoSection props={info} />
-  ))
   return (
     <div>
       <Header
@@ -47,7 +43,7 @@ export default function Blog(props) {
             </GridItem>
           </GridContainer>
         </div>
-        <div className={classes.container}>{infoSections}</div>
+        <BlogContent path={'content/blog'} />
       </div>
       <Footer />
     </div>
