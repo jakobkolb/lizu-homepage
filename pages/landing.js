@@ -1,37 +1,29 @@
-import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react'
+import classNames from 'classnames'
+import { makeStyles } from '@material-ui/core/styles'
 
-// @material-ui/icons
+import Header from 'src/components/Header/Header.js'
+import Footer from 'src/components/Footer/Footer.js'
+import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
-// core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
-
-import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
-// Sections for this page
-import InfoSection from "pages-sections/LandingPage-Sections/InfoSection.js";
-import ContactSection from "pages-sections/LandingPage-Sections/ContactSection.js";
+import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
+import InfoSection from 'src/pages-sections/LandingPage-Sections/InfoSection.jsx'
+import ContactSection from 'src/pages-sections/LandingPage-Sections/ContactSection.js'
 
 import heroData from 'content/hero.json'
 import landingData from 'content/landingContent.json'
+import HeroSection from '../src/pages-sections/LandingPage-Sections/HeroSection'
 
-const dashboardRoutes = [];
+const dashboardRoutes = []
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function LandingPage(props) {
-  const classes = useStyles();
-  const {title, subtitle, image} = heroData
-  const { ...rest } = props;
-  const infoSections = landingData["items"].map((info) => <InfoSection props={info}/>)
+  const classes = useStyles()
+  const { ...rest } = props
+  const infoSections = landingData['items'].map((info) => (
+    <InfoSection props={info} />
+  ))
   return (
     <div>
       <Header
@@ -42,46 +34,28 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: 'white'
         }}
         {...rest}
       />
-      <Parallax filter responsive image={require(image)}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>{title}</h1>
-              <h4>{subtitle}</h4>
-              <br />
-              <Button
-                color="primary"
-                size="lg"
-                href="#contact"
-              >
-                <i className="fas" />
-                Kontakt
-              </Button>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
+      <HeroSection {...heroData} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-            {infoSections}
+          {infoSections}
           <div id="contact">
-              <ContactSection />
+            <ContactSection />
           </div>
         </div>
       </div>
       <Footer />
 
-        <style global jsx>
-            {`
-       html {
-          scroll-behavior: smooth;
-        }
-  `}
-        </style>
+      <style global jsx>
+        {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+      </style>
     </div>
-  );
+  )
 }
