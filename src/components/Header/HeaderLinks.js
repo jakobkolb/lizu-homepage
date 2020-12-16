@@ -59,7 +59,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://t.me/joinchat/Bfy8p02aayBkWCll2YxCD"
             target="_blank"
             className={classes.navLink}
           >

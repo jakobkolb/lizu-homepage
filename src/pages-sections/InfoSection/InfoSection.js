@@ -5,7 +5,7 @@ import Card from 'src/components/Card/Card'
 import CardBody from 'src/components/Card/CardBody'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPageSections/infoStyle'
-import * as R from 'ramda'
+import { truncateText } from '../../helpers/truncateText'
 
 const useStyles = makeStyles(styles)
 
@@ -31,12 +31,5 @@ const InfoSection = (props) => {
     </div>
   )
 }
-export const truncateText = R.curry((text, truncateAt, truncate) => {
-  if (truncate) {
-    return R.pipe(R.splitAt(truncateAt), R.head)(text)
-  } else {
-    return text
-  }
-})
 
 export default InfoSection

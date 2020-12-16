@@ -7,12 +7,12 @@ import Footer from 'src/components/Footer/Footer.js'
 import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
-import InfoSection from 'src/pages-sections/LandingPage-Sections/InfoSection.js'
-import ContactSection from 'src/pages-sections/LandingPage-Sections/ContactSection.js'
+import InfoSection from 'src/pages-sections/InfoSection/InfoSection.js'
+import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
 import heroData from 'content/hero.json'
 import landingData from 'content/landingContent.json'
-import HeroSection from '../src/pages-sections/LandingPage-Sections/HeroSection'
+import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
 
 const dashboardRoutes = []
 
