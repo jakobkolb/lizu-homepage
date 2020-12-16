@@ -1,14 +1,8 @@
-import {
-  container,
-  title,
-  background
-} from 'src/assets/jss/nextjs-material-kit.js'
-import imagesStyles from 'src/assets/jss/nextjs-material-kit/imagesStyles'
+import { container, title } from 'src/assets/jss/nextjs-material-kit.js'
 
-const blogStyle = {
-  ...imagesStyles,
-  background,
+const imprintPageStyle = {
   container: {
+    paddingTop: '100px',
     zIndex: '12',
     color: '#FFFFFF',
     ...container
@@ -23,9 +17,8 @@ const blogStyle = {
     textDecoration: 'none'
   },
   subtitle: {
-    fontSize: '1.313rem',
-    maxWidth: '500px',
-    margin: '10px auto 0'
+    fontSize: '1.813rem',
+    maxWidth: '500px'
   },
   main: {
     background: '#FFFFFF',
@@ -37,7 +30,17 @@ const blogStyle = {
     borderRadius: '6px',
     boxShadow:
       '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)'
+  },
+  pageHeader: {
+    height: '100vh'
+  },
+  content: {
+    fontSize: '1.813rem',
+    fontWeight: '100px'
+  },
+  email: {
+    color: 'white'
   }
 }
 
-export default blogStyle
+export default imprintPageStyle

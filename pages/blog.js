@@ -7,9 +7,19 @@ import styles from 'src/assets/jss/nextjs-material-kit/pages/blogPage'
 import GridContainer from '../src/components/Grid/GridContainer'
 import GridItem from '../src/components/Grid/GridItem'
 import BlogContent from '../src/pages-sections/BlogPage-Sections/blogContentSection'
+import glob from 'glob'
+import * as R from 'ramda'
+import * as loadJsonFile from 'load-json-file'
+import Bluebird from 'bluebird'
 
 const dashboardRoutes = []
 const useStyles = makeStyles(styles)
+
+export async function getStaticProps(context) {
+  const paths = glob.sync('content/blog/*.json')
+  const blogPosts = await Bluebird.all(R.map(loadJsonFile, paths))
+  return { props: { blogPosts } }
+}
 
 export default function Blog(props) {
   const classes = useStyles()
@@ -23,7 +33,7 @@ export default function Blog(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 10,
+          height: 50,
           color: 'white'
         }}
         {...rest}
@@ -43,7 +53,8 @@ export default function Blog(props) {
             </GridItem>
           </GridContainer>
         </div>
-        <BlogContent path={'content/blog'} />
+        <BlogContent {...props} />
+        <br />
       </div>
       <Footer />
     </div>

@@ -32,12 +32,12 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="/imprint" className={classes.block} target="_blank">
+              <a href="/imprint" className={classes.block}>
                 Impressum
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/about" className={classes.block} target="_blank">
+              <a href="/about" className={classes.block}>
                 Über Uns
               </a>
             </ListItem>

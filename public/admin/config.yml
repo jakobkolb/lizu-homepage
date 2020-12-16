@@ -21,7 +21,10 @@ collections:
         label: "Impressum"
         name: "imprint"
         fields:
-          - { label: "Orga und Anschrift", name: "imprint-content", widget: "markdown"}
+          - { label: "Name", name: "organizationName", widget: "string"}
+          - { label: "Anschrift", name: "organizationAddress", widget: "markdown"}
+          - { label: "Email", name: "email", widget: "string"}
+          - { label: "Hintergrund Bild", name: "backgroundImage", widget: "image"}
 
       - file: "content/hero.json"
         label: "Hero"

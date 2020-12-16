@@ -2,21 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Card from '../../components/Card/Card'
 import CardBody from '../../components/Card/CardBody'
 import * as R from 'ramda'
+import ReactMarkdown from 'react-markdown'
 
 import { makeStyles } from '@material-ui/core/styles'
 import styles from 'src/assets/jss/nextjs-material-kit/pages/blogPage'
-import loadJsonFile from 'load-json-file'
 
 const useStyles = makeStyles(styles)
 
-export async function getStaticProps(context) {
-  const {
-    props: { path }
-  } = context
-  return await loadJsonFile(path)
-}
-
-const BlogpostCard = ({ image, title, date, body }) => {
+const BlogpostCard = ({ thumbnail, title, date, body }) => {
   const [expand, setExpand] = useState(false)
 
   const classes = useStyles()
@@ -24,14 +17,14 @@ const BlogpostCard = ({ image, title, date, body }) => {
   return (
     <div className={classes.section}>
       <Card>
-        <img className={classes.imgCardTop} src={image} />
+        <img className={classes.imgCardTop} src={thumbnail} />
         <CardBody>
           <h2 className={classes.cardTitle}>{title}</h2>
           <h4 className={classes.cardTitle}>{date}</h4>
-          <p className={classes.twoColumnText}>
+          <ReactMarkdown className={classes.twoColumnText}>
             {truncateText(body, 350, !expand)}
-            <a onClick={() => setExpand(!expand)}>{expandText}</a>
-          </p>
+          </ReactMarkdown>
+          <a onClick={() => setExpand(!expand)}>{expandText}</a>
         </CardBody>
       </Card>
     </div>
