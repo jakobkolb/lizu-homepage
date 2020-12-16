@@ -72,6 +72,7 @@ export default function CustomInput(props) {
           underline: underlineClasses
         }}
         id={id}
+        onInvalid={() => console.log('invalid input')}
         {...inputProps}
       />
     </FormControl>

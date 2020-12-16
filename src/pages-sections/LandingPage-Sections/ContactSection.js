@@ -20,7 +20,12 @@ const ContactSection = () => {
           <h4 className={classes.description}>
             Wir freuen uns über eine Nachricht und melden uns umgehend zurück.
           </h4>
-          <form name="contact" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/landing"
+          >
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
@@ -28,6 +33,12 @@ const ContactSection = () => {
                   id="name"
                   formControlProps={{
                     fullWidth: true
+                  }}
+                  inputProps={{
+                    required: true,
+                    onInvalid: (e) =>
+                      e.target.setCustomValidity('Bitte ausfüllen'),
+                    onChange: (e) => e.target.setCustomValidity('')
                   }}
                 />
               </GridItem>
@@ -37,6 +48,13 @@ const ContactSection = () => {
                   id="email"
                   formControlProps={{
                     fullWidth: true
+                  }}
+                  inputProps={{
+                    type: 'email',
+                    required: true,
+                    onInvalid: (e) =>
+                      e.target.setCustomValidity('Keine Email Addresse'),
+                    onChange: (e) => e.target.setCustomValidity('')
                   }}
                 />
               </GridItem>
@@ -49,11 +67,17 @@ const ContactSection = () => {
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5
+                  rows: 5,
+                  required: true,
+                  onInvalid: (e) =>
+                    e.target.setCustomValidity('Bitte ausfüllen'),
+                  onChange: (e) => e.target.setCustomValidity('')
                 }}
               />
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                <Button color="primary">Absenden</Button>
+                <Button color="primary" type="submit">
+                  Absenden
+                </Button>
               </GridItem>
             </GridContainer>
           </form>
