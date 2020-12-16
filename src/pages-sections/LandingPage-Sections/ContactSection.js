@@ -20,17 +20,15 @@ const ContactSection = () => {
           <h4 className={classes.description}>
             Wir freuen uns über eine Nachricht und melden uns umgehend zurück.
           </h4>
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            action="/landing"
-          >
+          <form name="contact" method="POST" data-netlify="true" action="/">
+            {/* This hidden field is required because of https://community.netlify.com/t/forms-not-being-sent-with-next-js/15602*/}
+            <input type="hidden" name="form-name" value="contact" />
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Name"
                   id="name"
+                  name="name"
                   formControlProps={{
                     fullWidth: true
                   }}
@@ -46,6 +44,7 @@ const ContactSection = () => {
                 <CustomInput
                   labelText="Email"
                   id="email"
+                  name="email"
                   formControlProps={{
                     fullWidth: true
                   }}
@@ -61,6 +60,7 @@ const ContactSection = () => {
               <CustomInput
                 labelText="Nachricht"
                 id="message"
+                name="message"
                 formControlProps={{
                   fullWidth: true,
                   className: classes.textArea

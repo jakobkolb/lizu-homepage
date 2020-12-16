@@ -19,6 +19,7 @@ export default function CustomInput(props) {
     formControlProps,
     labelText,
     id,
+    name,
     labelProps,
     inputProps,
     error,
@@ -72,6 +73,7 @@ export default function CustomInput(props) {
           underline: underlineClasses
         }}
         id={id}
+        name={name}
         onInvalid={() => console.log('invalid input')}
         {...inputProps}
       />
