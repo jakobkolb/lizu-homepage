@@ -3,17 +3,22 @@ backend:
 local_backend: true
 media_folder: public/img
 public_folder: img
+i18n:
+  structure: multiple_files
+  locales: [en, de, de_simple]
+  default_locale: de
 collections:
   - label: "Blog"
     name: "blog"
     folder: "content/blog"
     create: true
+    i18n: true
     format: "json"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true}
   - name: "landing"
     label: "Landing Page"
     files:
