@@ -1,65 +1,28 @@
 backend:
   name: git-gateway
-local_backend: true
+
 media_folder: public/img
 public_folder: img
 
 i18n:
-  structure: single_file
-  locales: [en, de]
-  default_locale: de
+  structure: multiple_folders
+  locales: [en, de, fr]
 
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "content/blog"
+  - name: posts
+    label: Posts
+    folder: content/posts
     create: true
     i18n: true
-    format: "json"
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", i18n: duplicate }
-      - { label: "Body", name: "body", widget: "markdown", i18n: true}
-  - name: "landing"
-    label: "Landing Page"
-    files:
-      - file: "content/imprint.json"
-        label: "Impressum"
-        name: "imprint"
-        fields:
-          - { label: "Name", name: "organizationName", widget: "string"}
-          - { label: "Anschrift", name: "organizationAddress", widget: "markdown"}
-          - { label: "Email", name: "email", widget: "string"}
-          - { label: "Hintergrund Bild", name: "backgroundImage", widget: "image"}
-
-      - file: "content/hero.json"
-        label: "Hero"
-        name: "hero"
-        fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Ssubtitle", name: "ssubtitle", widget: "string" }
-
-      - file: "content/landingContent.json"
-        label: "Landing Content"
-        name: "landing-content"
-        format: "json"
-        fields:
-          - name: "items"
-            widget: "list"
-            identifier_field: "content"
-            fields:
-              - label: "Content"
-                name: "content"
-                widget: "object"
-                fields:
-                  - { name: "headline", widget: "string" }
-                  - { name: "image-alt", title: "Image Alt Text", widget: "string" }
-                  - {
-                    name: "image",
-                    widget: "image",
-                    allow_multiple: false,
-                  }
-                  - { name: "text", widget: "markdown" }
+      - label: Title
+        name: title
+        widget: string
+        i18n: true
+      - label: Date
+        name: date
+        widget: datetime
+        i18n: duplicate
+      - label: Body
+        name: body
+        widget: markdown
