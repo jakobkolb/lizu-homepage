@@ -1,12 +1,15 @@
 backend:
   name: git-gateway
+  branch: master
 local_backend: true
 media_folder: public/img
 public_folder: img
+
 i18n:
-  structure: multiple_files
-  locales: [en, de, de_simple]
+  structure: multiple_folders
+  locales: [en, de]
   default_locale: de
+
 collections:
   - label: "Blog"
     name: "blog"

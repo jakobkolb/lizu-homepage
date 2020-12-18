@@ -1,0 +1,6 @@
+{
+  "title": "Test Eintrag",
+  "date": "2020-12-17T09:21:42.487Z",
+  "thumbnail": "/img/fox.jpg",
+  "body": "In mathematics, Fuchs' theorem, named after Lazarus Fuchs, states that a second-order differential equation of the form\n\n\n\n{\\displaystyle y''+p(x)y'+q(x)y=g(x)}{\\displaystyle y''+p(x)y'+q(x)y=g(x)}\n\nhas a solution expressible by a generalised Frobenius series when {\\displaystyle p(x)}p(x), {\\displaystyle q(x)}q(x) and {\\displaystyle g(x)}g(x) are analytic at {\\displaystyle x=a}x=a or {\\displaystyle a}a is a regular singular point. That is, any solution to this second-order differential equation can be written as\n\n\n\n{\\displaystyle y=\\sum \\_{n=0}^{\\infty }a\\_{n}(x-a)^{n+s},\\quad a\\_{0}\\neq 0}{\\displaystyle y=\\sum \\_{n=0}^{\\infty }a\\_{n}(x-a)^{n+s},\\quad a\\_{0}\\neq 0}\n\nfor some positive real s, or\n\n\n\n{\\displaystyle y=y\\_{0}\\ln(x-a)+\\sum \\_{n=0}^{\\infty }b\\_{n}(x-a)^{n+r},\\quad b\\_{0}\\neq 0}{\\displaystyle y=y\\_{0}\\ln(x-a)+\\sum \\_{n=0}^{\\infty }b\\_{n}(x-a)^{n+r},\\quad b\\_{0}\\neq 0}\n\nfor some positive real r, where y0 is a solution of the first kind.\n\n\n\nIts radius of convergence is at least as large as the minimum of the radii of convergence of {\\displaystyle p(x)}p(x), {\\displaystyle q(x)}q(x) and {\\displaystyle g(x)}g(x)."
+}
