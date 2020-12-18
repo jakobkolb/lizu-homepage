@@ -1,6 +1,6 @@
 {
-  "backgroundImage": "/img/landing.jpg",
-  "organizationName": "Lieber Zusammen e.V.",
-  "organizationAddress": "Some Address\nLine two",
-  "email": "lieber-zusammen@posteo.de"
+  "organizationName": "Jakob Kolb",
+  "organizationAddress": "Fuldastraße 19\n12045 Berlin",
+  "email": "lieber-zusammen@posteo.de",
+  "backgroundImage": "/img/landing.jpg"
 }
