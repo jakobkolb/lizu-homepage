@@ -74,7 +74,6 @@ export default function CustomInput(props) {
         }}
         id={id}
         name={name}
-        onInvalid={() => console.log('invalid input')}
         {...inputProps}
       />
     </FormControl>

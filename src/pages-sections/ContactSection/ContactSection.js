@@ -12,7 +12,6 @@ const useStyles = makeStyles(styles)
 
 const ContactSection = (props) => {
   const classes = useStyles()
-  console.log(props)
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
