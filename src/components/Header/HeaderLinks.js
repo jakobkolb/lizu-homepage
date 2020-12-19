@@ -29,7 +29,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Informationen"
+          buttonText={props.info}
           buttonProps={{
             className: classes.navLink,
             color: 'transparent'
@@ -37,10 +37,10 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link href="/investors">
-              <a className={classes.dropdownLink}>Für Investor:innen</a>
+              <a className={classes.dropdownLink}>{props.investors}</a>
             </Link>,
             <Link href="/members">
-              <a className={classes.dropdownLink}>Für Interessent:innen</a>
+              <a className={classes.dropdownLink}>{props.interested}</a>
             </Link>
           ]}
         />
@@ -48,14 +48,14 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Link href="/blog" locale="de" passHref>
           <Button href="/blog" color="transparent" className={classes.navLink}>
-            <Icon className={classes.icons}>book</Icon> Neuigkeiten
+            <Icon className={classes.icons}>book</Icon> {props.blog}
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="telegram-tooltip"
-          title="Follow us on Telegram"
+          title={props.telegramTooltip}
           placement={'top'}
           classes={{ tooltip: classes.tooltip }}
         >
@@ -66,6 +66,7 @@ export default function HeaderLinks(props) {
             className={classes.navLink}
           >
             <i className={classes.socialIcons + ' fab fa-telegram'} />
+            {props.telegram}
           </Button>
         </Tooltip>
       </ListItem>

@@ -22,6 +22,33 @@ collections:
       - { label: "Publish Date", name: "date", widget: "date", i18n: duplicate }
       - { label: "Featured Image", name: "thumbnail", widget: "image", i18n: duplicate }
       - { label: "Body", name: "body", widget: "markdown", i18n: true}
+  - name: "header_and_footer"
+    label: "Header and Footer"
+    i18n: true
+    format: "json"
+    files:
+    - file: "content/header.json"
+      label: "Header"
+      name: "header"
+      i18n: true
+      fields:
+      - {label: "Info", name: "info", widget: "string", i18n: true}
+      - {label: "Investors", name: "investors", widget: "string", i18n: true}
+      - {label: "Interrested", name: "interested", widget: "string", i18n: true}
+      - {label: "Blog", name: "blog", widget: "string", i18n: true}
+      - {label: "Telegram", name: "telegram", widget: "string", i18n: true, required: false}
+      - {label: "Telegram Tooltip", name: "telegramTooltip", widget: "string", i18n: true}
+      - {label: "Brand", name: "brand", widget: "string", i18n: true}
+    - file: "content/footer.json"
+      label: "Footer"
+      name: "footer"
+      i18n: true
+      fields:
+      - {label: "Imprint", name: "imprint", widget: "string", i18n: true}
+      - {label: "About", name: "about", widget: "string", i18n: true}
+      - {label: "CMS", name: "cms", widget: "string", i18n: true}
+
+
   - name: "landing"
     label: "Landing Page"
     i18n: true

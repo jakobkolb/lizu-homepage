@@ -33,17 +33,17 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a href="/imprint" className={classes.block}>
-                Impressum
+                {props.imprint}
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href="/about" className={classes.block}>
-                Über Uns
+                {props.about}
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href="/admin" className={classes.block} target="_blank">
-                Update Content
+                {props.cms}
               </a>
             </ListItem>
           </List>

@@ -11,20 +11,20 @@ import InfoSection from 'src/pages-sections/InfoSection/InfoSection.js'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
-import * as R from 'ramda'
-import * as loadJsonFile from 'load-json-file'
+import loadContent from '../src/helpers/loadContent'
 
 const dashboardRoutes = []
 
 const useStyles = makeStyles(styles)
 
 export async function getStaticProps(context) {
-  const heroData_i18n = await loadJsonFile('content/hero.json')
-  const landingData_i18n = await loadJsonFile('content/landing.json')
+  const loadContentWithLocale = loadContent(context.locale)
   return {
     props: {
-      landingData: R.prop(context.locale, landingData_i18n),
-      heroData: R.prop(context.locale, heroData_i18n)
+      landingData: await loadContentWithLocale('content/landing.json'),
+      heroData: await loadContentWithLocale('content/hero.json'),
+      headerData: await loadContentWithLocale('content/header.json'),
+      footerData: await loadContentWithLocale('content/footer.json')
     }
   }
 }
@@ -40,8 +40,8 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Lieber Zusammen"
-        rightLinks={<HeaderLinks />}
+        brand={props.headerData.brand}
+        rightLinks={<HeaderLinks {...props.headerData}/>}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -58,7 +58,7 @@ export default function LandingPage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer {...props.footerData}/>
 
       <style global jsx>
         {`

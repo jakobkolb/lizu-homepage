@@ -1,0 +1,22 @@
+{
+  "en": {
+    "imprint": "Imprint",
+    "about": "About Us",
+    "cms": "Content Management"
+  },
+  "de": {
+    "imprint": "Impressum",
+    "about": "Über Uns",
+    "cms": "Inhalte Anpassen"
+  },
+  "de-simple": {
+    "imprint": "Impressum",
+    "about": "Über Uns",
+    "cms": "Bilder und Texte ändern"
+  },
+  "en-simple": {
+    "imprint": "Imprint",
+    "about": "About Us",
+    "cms": "Change Text and Images"
+  }
+}
