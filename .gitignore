@@ -9,6 +9,8 @@
 # production
 /build
 /out
+/out_functions
+/out_publish
 
 # misc
 .idea

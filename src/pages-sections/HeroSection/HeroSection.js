@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles(styles)
 
 const HeroSection = (props) => {
-  const { image, title, subtitle } = props
+  const { image, title, subtitle, contactButton } = props
   const classes = useStyles()
   return (
     <Parallax filter responsive image={image}>
@@ -21,7 +21,7 @@ const HeroSection = (props) => {
             <br />
             <Button color="primary" size="lg" href="#contact">
               <i className="fas" />
-              Kontakt
+              {contactButton}
             </Button>
           </GridItem>
         </GridContainer>

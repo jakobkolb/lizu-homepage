@@ -10,15 +10,16 @@ import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPageSections
 
 const useStyles = makeStyles(styles)
 
-const ContactSection = () => {
+const ContactSection = (props) => {
   const classes = useStyles()
+  console.log(props)
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Kontakt</h2>
+          <h2 className={classes.title}>{props.title}</h2>
           <h4 className={classes.description}>
-            Wir freuen uns über eine Nachricht und melden uns umgehend zurück.
+            {props.greeting}
           </h4>
           <form name="contact" method="POST" data-netlify="true" action="/">
             {/* This hidden field is required because of https://community.netlify.com/t/forms-not-being-sent-with-next-js/15602*/}
@@ -26,7 +27,7 @@ const ContactSection = () => {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Name"
+                  labelText={props.name}
                   id="name"
                   name="name"
                   formControlProps={{
@@ -35,14 +36,14 @@ const ContactSection = () => {
                   inputProps={{
                     required: true,
                     onInvalid: (e) =>
-                      e.target.setCustomValidity('Bitte ausfüllen'),
+                      e.target.setCustomValidity(props.nameInvalid),
                     onChange: (e) => e.target.setCustomValidity('')
                   }}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
-                  labelText="Email"
+                  labelText={props.email}
                   id="email"
                   name="email"
                   formControlProps={{
@@ -52,13 +53,13 @@ const ContactSection = () => {
                     type: 'email',
                     required: true,
                     onInvalid: (e) =>
-                      e.target.setCustomValidity('Keine Email Addresse'),
+                      e.target.setCustomValidity(props.emailInvalid),
                     onChange: (e) => e.target.setCustomValidity('')
                   }}
                 />
               </GridItem>
               <CustomInput
-                labelText="Nachricht"
+                labelText={props.message}
                 id="message"
                 name="message"
                 formControlProps={{
@@ -70,13 +71,13 @@ const ContactSection = () => {
                   rows: 5,
                   required: true,
                   onInvalid: (e) =>
-                    e.target.setCustomValidity('Bitte ausfüllen'),
+                    e.target.setCustomValidity(props.messageInvalid),
                   onChange: (e) => e.target.setCustomValidity('')
                 }}
               />
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
                 <Button color="primary" type="submit">
-                  Absenden
+                  {props.send}
                 </Button>
               </GridItem>
             </GridContainer>

@@ -1,0 +1,46 @@
+{
+  "en": {
+    "title": "Contact",
+    "greeting": "We are happy to hear from you and will get back to you shortly.",
+    "name": "Name",
+    "nameInvalid": "Please fill in your name",
+    "email": "Email",
+    "emailInvalid": "Please provide a valid email",
+    "message": "Message",
+    "messageInvalid": "Please enter your message",
+    "send": "Send"
+  },
+  "de": {
+    "title": "Kontakt",
+    "greeting": "Wir freuen uns über eine Nachricht und antworten umgehend.",
+    "name": "Name",
+    "nameInvalid": "Bitte ausfüllen",
+    "email": "Email",
+    "emailInvalid": "Keine gültige Email Addresse",
+    "message": "Nachricht",
+    "messageInvalid": "Bitte ausfüllen",
+    "send": "Absenden"
+  },
+  "de-simple": {
+    "title": "Kontakt",
+    "greeting": "Wir freuen uns über eine Nachricht und antworten umgehend.",
+    "name": "Name",
+    "nameInvalid": "Bitte ausfüllen",
+    "email": "Email",
+    "emailInvalid": "Keine gültige Email Addresse",
+    "message": "Nachricht",
+    "messageInvalid": "Bitte ausfüllen",
+    "send": "Absenden"
+  },
+  "en-simple": {
+    "title": "Contact",
+    "greeting": "We are happy to hear from you and will get back to you shortly.",
+    "name": "Name",
+    "nameInvalid": "Please fill in your name",
+    "email": "Email",
+    "emailInvalid": "Please provide a valid email",
+    "message": "Message",
+    "messageInvalid": "Please enter your message",
+    "send": "Send"
+  }
+}
