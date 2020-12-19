@@ -30,14 +30,12 @@ const LocaleSwitcher = () => {
         color: 'transparent'
       }}
       dropdownList={locales.map((locale) => (
-        <Link href="/investors">
           <a
             className={classes.dropdownLink}
             onClick={() => handleLocaleChange(locale)}
           >
             {languageNames[locale]}
           </a>
-        </Link>
       ))}
     />
   )

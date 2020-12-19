@@ -1,6 +1,6 @@
 {
   "name": "lizu-homepage",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Homepage of Lieber Zusammen. A Berlin based community living project.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "yarn build && yarn next export",
+    "export": "yarn build",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
   },
   "author": "Jakob J. Kolb",

@@ -17,5 +17,6 @@ module.exports = withPlugins([[withSass], [withImages]], {
   i18n: {
     locales: ['de', 'en', 'de-simple', 'en-simple'],
     defaultLocale: 'de'
-  }
+  },
+  distDir: 'build',
 })
