@@ -54,6 +54,20 @@ collections:
     i18n: true
     format: "json"
     files:
+      - file: "content/contact.json"
+        label: "Contact Section"
+        name: "contact"
+        i18n: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true}
+          - { label: "Greeting", name: "greeting", widget: "string", i18n: true}
+          - { label: "Name", name: "name", widget: "string", i18n: true}
+          - { label: "Name Invalid", name: "nameInvalid", widget: "string", i18n: true}
+          - { label: "Email", name: "email", widget: "string", i18n: true}
+          - { label: "Email Invalid", name: "emailInvalid", widget: "string", i18n: true}
+          - { label: "Message", name: "message", widget: "string", i18n: true}
+          - { label: "Message Invalid", name: "messageInvalid", widget: "string", i18n: true}
+          - { label: "Send Button", name: "send", widget: "string", i18n: true}
       - file: "content/hero.json"
         label: "Hero"
         name: "hero"
@@ -63,6 +77,7 @@ collections:
           - { label: "Subtitle", name: "subtitle", widget: "string", i18n: true }
           - { label: "Image", name: "image", widget: "image", i18n: true }
           - { label: "Image Alt Text", name: "altText", widget: "string", i18n: true }
+          - { label: "Contact Button Text", name: "contactButton", widget: "string", i18n: true}
       - file: "content/landing.json"
         label: "Landing Content"
         name: "landing-content"

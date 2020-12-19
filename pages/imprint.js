@@ -9,21 +9,29 @@ import HeaderLinks from '../src/components/Header/HeaderLinks'
 import Header from '../src/components/Header/Header'
 import GridItem from '../src/components/Grid/GridItem'
 import GridContainer from '../src/components/Grid/GridContainer'
+import loadContent from '../src/helpers/loadContent'
 
-export const getStaticProps = async () => {
-  const content = await loadJsonFile('content/imprint.json')
-  return { props: { ...content } }
+export const getStaticProps = async ({locale}) => {
+  const loadContentWithLocale = loadContent(locale)
+  
+  return { 
+    props: {
+      headerData: await loadContentWithLocale('content/header.json'),
+      contentData: await loadContentWithLocale('content/imprint.json') 
+    } 
+  }
 }
 
 const dashboardRoutes = []
 
 const useStyles = makeStyles(styles)
-const Imprint = ({
+const Imprint = ({contentData: {
+  title,
   backgroundImage,
   organizationName,
   organizationAddress,
   email
-}) => {
+}, headerData}) => {
   const classes = useStyles()
   return (
     <div
@@ -37,8 +45,8 @@ const Imprint = ({
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Lieber Zusammen"
-        rightLinks={<HeaderLinks />}
+        brand={headerData.brand}
+        rightLinks={<HeaderLinks {...headerData}/>}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -49,7 +57,7 @@ const Imprint = ({
         <div className={'height: 100px'} />
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
-            <h1 className={classes.title}>Imprint</h1>
+            <h1 className={classes.title}>{title}</h1>
             <br />
             <br />
             <h2 className={classes.subtitle}>{organizationName}</h2>
