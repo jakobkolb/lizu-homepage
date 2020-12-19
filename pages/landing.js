@@ -10,18 +10,29 @@ import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
 import InfoSection from 'src/pages-sections/InfoSection/InfoSection.js'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
-import heroData from 'content/hero.json'
-import landingData from 'content/landingContent.json'
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
+import loadContent from '../src/helpers/loadContent'
 
 const dashboardRoutes = []
 
 const useStyles = makeStyles(styles)
 
+export async function getStaticProps(context) {
+  const loadContentWithLocale = loadContent(context.locale)
+  return {
+    props: {
+      landingData: await loadContentWithLocale('content/landing.json'),
+      heroData: await loadContentWithLocale('content/hero.json'),
+      headerData: await loadContentWithLocale('content/header.json'),
+      footerData: await loadContentWithLocale('content/footer.json')
+    }
+  }
+}
+
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
-  const infoSections = landingData['items'].map((info) => (
+  const infoSections = props.landingData['items'].map((info) => (
     <InfoSection props={info} />
   ))
   return (
@@ -29,8 +40,8 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Lieber Zusammen"
-        rightLinks={<HeaderLinks />}
+        brand={props.headerData.brand}
+        rightLinks={<HeaderLinks {...props.headerData}/>}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -38,7 +49,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <HeroSection {...heroData} />
+      <HeroSection {...props.heroData} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           {infoSections}
@@ -47,7 +58,7 @@ export default function LandingPage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer {...props.footerData}/>
 
       <style global jsx>
         {`

@@ -11,6 +11,7 @@ import glob from 'glob'
 import * as R from 'ramda'
 import * as loadJsonFile from 'load-json-file'
 import Bluebird from 'bluebird'
+import loadContent from '../src/helpers/loadContent'
 
 const dashboardRoutes = []
 const useStyles = makeStyles(styles)
@@ -18,7 +19,13 @@ const useStyles = makeStyles(styles)
 export async function getStaticProps(context) {
   const paths = glob.sync('content/blog/*.json')
   const blogPosts = await Bluebird.all(R.map(loadJsonFile, paths))
-  return { props: { blogPosts } }
+  return { 
+    props: { 
+      blogPosts: R.map(R.prop(context.locale), blogPosts),
+      headerContent: await loadContent(context.locale, 'content/header.json'),
+      footerContent: await loadContent(context.locale, 'content/footer.json')
+          } 
+        }
 }
 
 export default function Blog(props) {
@@ -29,8 +36,8 @@ export default function Blog(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Lieber Zusammen"
-        rightLinks={<HeaderLinks />}
+        brand={props.headerContent.brand}
+        rightLinks={<HeaderLinks {...props.headerContent}/>}
         fixed
         changeColorOnScroll={{
           height: 50,
@@ -53,10 +60,10 @@ export default function Blog(props) {
             </GridItem>
           </GridContainer>
         </div>
-        <BlogContent {...props} />
+        <BlogContent blogPosts={props.blogPosts} />
         <br />
       </div>
-      <Footer />
+      <Footer {...props.footerContent}/>
     </div>
   )
 }
