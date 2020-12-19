@@ -24,7 +24,8 @@ export async function getStaticProps(context) {
       landingData: await loadContentWithLocale('content/landing.json'),
       heroData: await loadContentWithLocale('content/hero.json'),
       headerData: await loadContentWithLocale('content/header.json'),
-      footerData: await loadContentWithLocale('content/footer.json')
+      footerData: await loadContentWithLocale('content/footer.json'),
+      contactData: await loadContentWithLocale('content/contact.json')
     }
   }
 }
@@ -54,7 +55,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           {infoSections}
           <div id="contact">
-            <ContactSection />
+            <ContactSection {...props.contactData}/>
           </div>
         </div>
       </div>
