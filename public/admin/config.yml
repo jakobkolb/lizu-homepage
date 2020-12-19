@@ -6,8 +6,8 @@ media_folder: public/img
 public_folder: img
 
 i18n:
-  structure: multiple_folders
-  locales: [en, de]
+  structure: single_file
+  locales: [en, de, de-simple, en-simple]
   default_locale: de
 
 collections:
@@ -24,43 +24,51 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", i18n: true}
   - name: "landing"
     label: "Landing Page"
+    i18n: true
+    format: "json"
     files:
-      - file: "content/imprint.json"
-        label: "Impressum"
-        name: "imprint"
-        fields:
-          - { label: "Name", name: "organizationName", widget: "string"}
-          - { label: "Anschrift", name: "organizationAddress", widget: "markdown"}
-          - { label: "Email", name: "email", widget: "string"}
-          - { label: "Hintergrund Bild", name: "backgroundImage", widget: "image"}
-
       - file: "content/hero.json"
         label: "Hero"
         name: "hero"
+        i18n: true
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Ssubtitle", name: "ssubtitle", widget: "string" }
-
-      - file: "content/landingContent.json"
+          - { label: "Title", name: "title", widget: "string", i18n: true}
+          - { label: "Subtitle", name: "subtitle", widget: "string", i18n: true }
+          - { label: "Image", name: "image", widget: "image", i18n: true }
+          - { label: "Image Alt Text", name: "altText", widget: "string", i18n: true }
+      - file: "content/landing.json"
         label: "Landing Content"
         name: "landing-content"
-        format: "json"
+        i18n: true
         fields:
           - name: "items"
             widget: "list"
             identifier_field: "content"
+            i18n: true
             fields:
               - label: "Content"
                 name: "content"
                 widget: "object"
                 fields:
-                  - { name: "headline", widget: "string" }
-                  - { name: "image-alt", title: "Image Alt Text", widget: "string" }
+                  - { name: "headline", widget: "string" , i18n: true}
+                  - { name: "image-alt", title: "Image Alt Text", widget: "string" , i18n: true}
                   - {
                     name: "image",
                     widget: "image",
-                    allow_multiple: false,
+                    allow_multiple: false, i18n: true
                   }
-                  - { name: "text", widget: "markdown" }
+                  - { name: "text", widget: "markdown" , i18n: true}
+  - name: "imprint"
+    label: "Impressum"
+    i18n: true
+    files:
+      - file: "content/imprint.json"
+        label: "Impressum"
+        name: "imprint"
+        i18n: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Name", name: "organizationName", widget: "string", i18n: true }
+          - { label: "Anschrift", name: "organizationAddress", widget: "markdown", i18n: true }
+          - { label: "Email", name: "email", widget: "string", i18n: true }
+          - { label: "Hintergrund Bild", name: "backgroundImage", widget: "image", i18n: true }

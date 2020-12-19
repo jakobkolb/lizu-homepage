@@ -1,5 +1,19 @@
 {
-  "title": "WOHNPROJEKT HOPPEGARTEN",
-  "subtitle": "Eine Gemeinschaft in Entstehung.",
-  "image": "/img/landing.jpg"
+  "de": {
+    "title": "WOHNPROJEKT HOPPEGARTEN",
+    "subtitle": "Eine Gemeinschaft in Entstehung.",
+    "image": "/img/landing.jpg"},
+  "en": {
+    "title": "HOUSING PROJECT HOPPEGARTEN",
+    "subtitle": "A community in the making.",
+    "image": "/img/landing.jpg"},
+  "de-simple": {
+    "title": "WOHNPROJEKT HOPPEGARTEN",
+    "subtitle": "Eine Gemeinschaft in Entstehung.",
+    "image": "/img/landing.jpg"},
+  "en-simple": {
+    "title": "HOUSING PROJECT HOPPEGARTEN",
+    "subtitle": "A community in the making.",
+    "image": "/img/landing.jpg"}
 }
+

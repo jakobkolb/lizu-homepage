@@ -14,8 +14,8 @@ module.exports = withPlugins([[withSass], [withImages]], {
 
     return config
   },
-  publicRuntimeConfig: {
-    // Will be available on both server and client
-    staticFolder: '/static'
+  i18n: {
+    locales: ['de', 'en', 'de-simple', 'en-simple'],
+    defaultLocale: 'de'
   }
 })

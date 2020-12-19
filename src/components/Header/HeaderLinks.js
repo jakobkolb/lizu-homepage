@@ -17,6 +17,7 @@ import CustomDropdown from 'src/components/CustomDropdown/CustomDropdown.js'
 import Button from 'src/components/CustomButtons/Button.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js'
+import LocaleSwitcher from '../LocaleSwitcher'
 
 const useStyles = makeStyles(styles)
 
@@ -45,11 +46,12 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button href="/blog" color="transparent" className={classes.navLink}>
-          <Icon className={classes.icons}>book</Icon> Neuigkeiten
-        </Button>
+        <Link href="/blog" locale="de" passHref>
+          <Button href="/blog" color="transparent" className={classes.navLink}>
+            <Icon className={classes.icons}>book</Icon> Neuigkeiten
+          </Button>
+        </Link>
       </ListItem>
-
       <ListItem className={classes.listItem}>
         <Tooltip
           id="telegram-tooltip"
@@ -66,6 +68,9 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + ' fab fa-telegram'} />
           </Button>
         </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <LocaleSwitcher />
       </ListItem>
     </List>
   )

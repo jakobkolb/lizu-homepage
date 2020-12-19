@@ -18,7 +18,7 @@ const useStyles = makeStyles(styles)
 export async function getStaticProps(context) {
   const paths = glob.sync('content/blog/*.json')
   const blogPosts = await Bluebird.all(R.map(loadJsonFile, paths))
-  return { props: { blogPosts } }
+  return { props: { blogPosts: R.map(R.prop(context.locale), blogPosts) } }
 }
 
 export default function Blog(props) {
