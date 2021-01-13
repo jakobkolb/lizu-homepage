@@ -7,6 +7,7 @@ import classNames from 'classnames'
 // material-ui core components
 import { List, ListItem } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import Link from 'next/link'
 
 // @material-ui/icons
 import Favorite from '@material-ui/icons/Favorite'
@@ -37,8 +38,8 @@ export default function Footer(props) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/about" className={classes.block}>
-                {props.about}
+              <a href="/privacy" className={classes.block}>
+                {props.privacy}
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -65,5 +66,9 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
+  privacy: PropTypes.string,
+  imprint: PropTypes.string,
+  cms: PropTypes.string,
+  about: PropTypes.string
 }

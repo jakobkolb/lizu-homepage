@@ -26,26 +26,6 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          buttonText={props.info}
-          buttonProps={{
-            className: classes.navLink,
-            color: 'transparent'
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link href="/investors">
-              <a className={classes.dropdownLink}>{props.investors}</a>
-            </Link>,
-            <Link href="/members">
-              <a className={classes.dropdownLink}>{props.interested}</a>
-            </Link>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Link href="/blog" locale="de" passHref>
           <Button href="/blog" color="transparent" className={classes.navLink}>
             <Icon className={classes.icons}>book</Icon> {props.blog}
@@ -61,7 +41,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://t.me/joinchat/Bfy8p02aayBkWCll2YxCD"
+            href="https://t.me/joinchat/Bfy8p02aayBkWCll2YxCDQ"
             target="_blank"
             className={classes.navLink}
           >

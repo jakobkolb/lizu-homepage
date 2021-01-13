@@ -4,12 +4,11 @@ import { makeStyles } from '@material-ui/core/styles'
 import ReactMarkdown from 'react-markdown'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/imprintPage'
-import * as loadJsonFile from 'load-json-file'
 import HeaderLinks from '../src/components/Header/HeaderLinks'
 import Header from '../src/components/Header/Header'
 import GridItem from '../src/components/Grid/GridItem'
 import GridContainer from '../src/components/Grid/GridContainer'
-import { loadContentWithLocale } from '../src/helpers/loadContent'
+import { loadContentWithLocale, loadContent } from '../src/helpers/loadContent'
 
 export const getStaticProps = async ({ locale }) => {
   const loadContentWithLocaleSet = loadContentWithLocale(locale)
@@ -17,7 +16,7 @@ export const getStaticProps = async ({ locale }) => {
   return {
     props: {
       headerData: await loadContentWithLocaleSet('content/header.json'),
-      contentData: await loadContentWithLocaleSet('content/imprint.json')
+      contentData: await loadContent('content/privacy.json')
     }
   }
 }
@@ -26,13 +25,7 @@ const dashboardRoutes = []
 
 const useStyles = makeStyles(styles)
 const Imprint = ({
-  contentData: {
-    title,
-    backgroundImage,
-    organizationName,
-    organizationAddress,
-    email
-  },
+  contentData: { title, backgroundImage, content },
   headerData
 }) => {
   const classes = useStyles()
@@ -60,18 +53,10 @@ const Imprint = ({
         <div className={'height: 100px'} />
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
-            <h1 className={classes.title}>{title}</h1>
+            <h1 className={classes.subtitle}>{title}</h1>
             <br />
             <br />
-            <h2 className={classes.subtitle}>{organizationName}</h2>
-            <br />
-            <ReactMarkdown className={classes.content}>
-              {organizationAddress}
-            </ReactMarkdown>
-            <br />
-            <a className={classes.email} href={`mailto: ${email}`}>
-              {email}
-            </a>
+            <ReactMarkdown className={classes.content}>{content}</ReactMarkdown>
           </GridItem>
         </GridContainer>
       </div>
