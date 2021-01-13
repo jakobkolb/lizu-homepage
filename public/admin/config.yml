@@ -32,9 +32,6 @@ collections:
       name: "header"
       i18n: true
       fields:
-      - {label: "Info", name: "info", widget: "string", i18n: true}
-      - {label: "Investors", name: "investors", widget: "string", i18n: true}
-      - {label: "Interrested", name: "interested", widget: "string", i18n: true}
       - {label: "Blog", name: "blog", widget: "string", i18n: true}
       - {label: "Telegram", name: "telegram", widget: "string", i18n: true, required: false}
       - {label: "Telegram Tooltip", name: "telegramTooltip", widget: "string", i18n: true}
@@ -45,7 +42,7 @@ collections:
       i18n: true
       fields:
       - {label: "Imprint", name: "imprint", widget: "string", i18n: true}
-      - {label: "About", name: "about", widget: "string", i18n: true}
+      - {label: "Privacy", name: "privacy", widget: "string", i18n: true}
       - {label: "CMS", name: "cms", widget: "string", i18n: true}
 
 
@@ -101,16 +98,28 @@ collections:
                   }
                   - { name: "text", widget: "markdown" , i18n: true}
   - name: "imprint"
-    label: "Impressum"
+    label: "Imprint"
     i18n: true
     files:
       - file: "content/imprint.json"
-        label: "Impressum"
+        label: "Imprint"
         name: "imprint"
         i18n: true
         fields:
           - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Name", name: "organizationName", widget: "string", i18n: true }
-          - { label: "Anschrift", name: "organizationAddress", widget: "markdown", i18n: true }
+          - { label: "Address", name: "organizationAddress", widget: "markdown", i18n: true }
           - { label: "Email", name: "email", widget: "string", i18n: true }
-          - { label: "Hintergrund Bild", name: "backgroundImage", widget: "image", i18n: true }
+          - { label: "Background Image", name: "backgroundImage", widget: "image", i18n: true }
+  - name: "privacy"
+    label: "Privacy"
+    i18n: false
+    files:
+      - file: "content/privacy.json"
+        label: "Data privacy"
+        name: "privacy"
+        i18n: false
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: duplicate }
+          - { label: "Content", name: "content", widget: "markdown", i18n: duplicate }
+          - { label: "Background Image", name: "backgroundImage", widget: "image", i18n: duplicate }

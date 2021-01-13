@@ -1,35 +1,23 @@
 {
   "en": {
-    "info": "Information",
-    "investors": "For investors",
-    "interested": "For interested people",
     "blog": "Blog",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
     "brand": "Lieber Zusammen"
   },
   "de": {
-    "info": "Informationen",
-    "investors": "Für Investor:innen",
-    "interested": "Für Interessent:innen",
     "blog": "Neuigkeiten",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
     "brand": "Lieber Zusammen"
   },
   "de-simple": {
-    "info": "Informationen",
-    "investors": "Für Investor:innen",
-    "interested": "Für Interessent:innen",
     "blog": "Blog",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
     "brand": "Lieber Zusammen"
   },
   "en-simple": {
-    "info": "Information",
-    "investors": "For investors",
-    "interested": "For interested people",
     "blog": "Blog",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",

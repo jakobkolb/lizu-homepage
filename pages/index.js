@@ -11,21 +11,21 @@ import InfoSection from 'src/pages-sections/InfoSection/InfoSection.js'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
-import loadContent from '../src/helpers/loadContent'
+import { loadContentWithLocale } from '../src/helpers/loadContent'
 
 const dashboardRoutes = []
 
 const useStyles = makeStyles(styles)
 
 export async function getStaticProps(context) {
-  const loadContentWithLocale = loadContent(context.locale)
+  const loadContentWithLocaleSet = loadContentWithLocale(context.locale)
   return {
     props: {
-      landingData: await loadContentWithLocale('content/landing.json'),
-      heroData: await loadContentWithLocale('content/hero.json'),
-      headerData: await loadContentWithLocale('content/header.json'),
-      footerData: await loadContentWithLocale('content/footer.json'),
-      contactData: await loadContentWithLocale('content/contact.json')
+      landingData: await loadContentWithLocaleSet('content/landing.json'),
+      heroData: await loadContentWithLocaleSet('content/hero.json'),
+      headerData: await loadContentWithLocaleSet('content/header.json'),
+      footerData: await loadContentWithLocaleSet('content/footer.json'),
+      contactData: await loadContentWithLocaleSet('content/contact.json')
     }
   }
 }
@@ -42,7 +42,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand={props.headerData.brand}
-        rightLinks={<HeaderLinks {...props.headerData}/>}
+        rightLinks={<HeaderLinks {...props.headerData} />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -55,11 +55,11 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           {infoSections}
           <div id="contact">
-            <ContactSection {...props.contactData}/>
+            <ContactSection {...props.contactData} />
           </div>
         </div>
       </div>
-      <Footer {...props.footerData}/>
+      <Footer {...props.footerData} />
 
       <style global jsx>
         {`

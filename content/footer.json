@@ -1,22 +1,22 @@
 {
   "en": {
     "imprint": "Imprint",
-    "about": "About Us",
+    "privacy": "Data Privacy",
     "cms": "Content Management"
   },
   "de": {
     "imprint": "Impressum",
-    "about": "Über Uns",
+    "privacy": "Datenschutzerklärung",
     "cms": "Inhalte Anpassen"
   },
   "de-simple": {
     "imprint": "Impressum",
-    "about": "Über Uns",
+    "privacy": "Datenschutzerklärung",
     "cms": "Bilder und Texte ändern"
   },
   "en-simple": {
     "imprint": "Imprint",
-    "about": "About Us",
+    "privacy": "Data Privacy",
     "cms": "Change Text and Images"
   }
 }
