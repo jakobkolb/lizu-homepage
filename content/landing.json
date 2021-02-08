@@ -12,7 +12,7 @@
       {
         "content": {
           "headline": "Where?",
-          "text": "The land is situated on Neubauernweg in Dahlwitz-Hoppegarten, between the historical centre of the village Dahlwitz and a commericial area, just a stone's throw from Brandenburg's border with Berlin (52°30'28.9\"N, 13°39'13.1\"E). The S-Bahn station Birkenstein is a fifteen minutes walk away. There are direct trains to Ostkreuz (approx. 20 minutes) and  Alexanderplatz (approx. 25 minutes)."
+          "text": "The land is situated on Neubauernweg in Dahlwitz-Hoppegarten, between the historical centre of the village Dahlwitz and a commericial area, just a stone's throw from Brandenburg's border with Berlin (52°30'28.9\"N, 13°39'13.1\"E). The S-Bahn station Birkenstein is a fifteen minutes walk away. There are direct trains to Ostkreuz (approx. 20 minutes’ travel) and  Alexanderplatz (approx. 25 minutes)."
         }
       },
       {
@@ -37,6 +37,14 @@
           "image": "img/fox.jpg",
           "image-alt": "The Fox",
           "text": "Our Verein originally grew out of a circle of friends, consisting of people in their thirties, who were looking for a new, communal form of living for the phase of raising a  familiy and for a place where children can grow up together and many other people share in/contribute to a communal space. But we are also people in other age brackets and situations. What unites us is the idea that we'd like to live \"rather together\" than in small units:) It is important to us to live and build in a way that uses resources sparingly and leaves plenty of space for nature. Our vision goes beyond living and working together: we would like to make an impact on our immediate neighbourhood and, if possible (though perhaps it's a bit of a stretch), society at large. We are open to people of all ages, genders and backgrounds. However, you should share our conviction that working and living together without hierarchies is possible and that our community should be based on mutual respect and appreciation, regardless of a person's age, background, level of education, income or gender."
+        }
+      },
+      {
+        "content": {
+          "headline": "When? / State of affairs",
+          "text": "Our current estimate is (February 2021) that it will probably take around 5 years until we can move into our future homes. Our core group has recently become a bit bigger, and we are currently getting organized. We meet regularly in plenary sessions and retreats (online). We are also doing research, looking for collaborators and partners, are starting to get to know each other a little better and are working towards our big goal - our communal housing project just outside Berlin.",
+          "image-alt": "U-Bahn",
+          "image": "img/ubahn.jpg"
         }
       }
     ]
@@ -81,6 +89,14 @@
           "text": "Der Verein entstand ursprünglich aus einem Freundeskreis heraus, bestehend aus Menschen um die Dreißig, die den Wunsch haben, für die Lebensphase mit Familie eine neue, gemeinsame Wohnform zu finden: an einem Ort, wo Kinder gemeinsam aufwachsen und viele andere Menschen das Zusammenleben bereichern. Aber wir sind auch Menschen in anderen Altersstufen und Lebenssituationen, aber uns verbindet der Wunsch \"lieber zusammen\" wohnen zu wollen:) Es ist uns wichtig, ressourcenschonend zu leben und zu bauen und viel Raum für Natur zu lassen. Unsere Vision geht über gemeinsames Wohnen und Arbeiten hinaus und bezieht auch die Nachbarschaft mit ein - und auch das vielbeschworene \"große Ganze\". Wir sind offen für Menschen aller Altersstufen, Geschlechter und Hintergründe, die mit uns die Überzeugung teilen, dass gemeinsames Wohnen, Arbeiten und Zusammenleben ohne Hierarchien, nur auf Grundlage gegenseitiger Wertschätzung - unabhängig von Alter, Hintergrund, Bildungsgrad, Einkommen oder Geschlecht - und in Verantwortung funktionieren kann.",
           "image": "img/fox.jpg",
           "image-alt": "Fuchs"
+        }
+      },
+      {
+        "content": {
+          "text": "\r\n\r\nWir gehen davon aus (Stand Anfang 2021), dass es noch etwa 5 Jahre dauern wird, bis wir einziehen können. Im Moment finden wir uns als größer gewordene Kerngruppe zusammen, treffen uns (pandemiebedingt online) zu Arbeitsplena und Retreats, informieren und vernetzen uns, lernen uns gegenseitig besser kennen und arbeiten gemeinsam daran, dass unsere Vision vom gemeinsamen Wohnen am Berliner Stadtrand Schritt für Schritt Wirklichkeit wird.",
+          "headline": "WANN? / Stand der Dinge",
+          "image": "img/ubahn.jpg",
+          "image-alt": "U-Bahn"
         }
       }
     ]
