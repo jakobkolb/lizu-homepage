@@ -1,4 +1,4 @@
-# Landing Page for Lieber Zusammen
+# Landing Page for Berlinzudir
 
 Bootstrapped with [Creative Tims NextJS Material template](https://www.creative-tim.com/product/nextjs-material-kit)
 
