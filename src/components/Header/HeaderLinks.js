@@ -26,29 +26,11 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link href="/blog" locale="de" passHref>
-          <Button href="/blog" color="transparent" className={classes.navLink}>
+        <Link href="http://www.berlinzudir.de" passHref>
+          <Button href="http://www.berlinzudir.de" color="transparent" className={classes.navLink}>
             <Icon className={classes.icons}>book</Icon> {props.blog}
           </Button>
         </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="telegram-tooltip"
-          title={props.telegramTooltip}
-          placement={'top'}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://t.me/joinchat/Bfy8p02aayBkWCll2YxCDQ"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + ' fab fa-telegram'} />
-            {props.telegram}
-          </Button>
-        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <LocaleSwitcher />

@@ -53,7 +53,6 @@ export default function LandingPage(props) {
       <HeroSection {...props.heroData} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          {infoSections}
           <div id="contact">
             <ContactSection {...props.contactData} />
           </div>

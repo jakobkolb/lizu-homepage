@@ -1,30 +1,30 @@
 {
   "en": {
     "title": "Imprint",
-    "organizationName": "Lieber Zusammen e.V.",
-    "organizationAddress": "Kienitzer Straße 98,\n\n12049 Berlin\n\nRepresented by the Board of Directors:\n\nWiebke Lübben\n\nPhone: +4916098174424",
-    "email": "lieber-zusammen@posteo.de",
+    "organizationName": "FDO Solutions GmbH",
+    "organizationAddress": "Glogauer Str. 21,\n\n10999 Berlin\n\nRepresented by the business director:\n\nFelix Weth\n\nPhone: +49 (0) 178 189 6873",
+    "email": "berlin@berlinzudir.de",
     "backgroundImage": "/img/landing.jpg"
   },
   "de": {
     "title": "Impressum",
-    "organizationName": "Lieber Zusammen e.V.",
-    "organizationAddress": "Kienitzer Straße 98, \n\n12049 Berlin\n\nVertreten durch den Vorstand:\n\nWiebke Lübben\n\nTelefon: +4916098174424",
-    "email": "lieber-zusammen@posteo.de",
+    "organizationName": "FDO Solutions GmbH",
+    "organizationAddress": "Glogauer Str. 21, \n\n10999 Berlin\n\nVertreten durch den Geschäftsführer:\n\nFelix Weth\n\nTelefon: +49 (0) 178 189 6873",
+    "email": "berlin@berlinzudir.de",
     "backgroundImage": "/img/landing.jpg"
   },
   "de-simple": {
     "title": "Impressum",
-    "organizationName": "Lieber Zusammen e.V.",
-    "organizationAddress": "Kienitzer Straße 98, \n\n12049 Berlin\n\nVertreten durch den Vorstand:\n\nWiebke Lübben\n\nTelefon: +4916098174424",
-    "email": "lieber-zusammen@posteo.de",
+    "organizationName": "FDO Solutions GmbH",
+    "organizationAddress": "Glogauer Str. 21, \n\n10999 Berlin\n\nVertreten durch den Geschäftsführer:\n\nFelix Weth\n\nTelefon: +49 (0) 178 189 6873",
+    "email": "berlin@berlinzudir.de",
     "backgroundImage": "/img/landing.jpg"
   },
   "en-simple": {
     "title": "Imprint",
-    "organizationName": "Lieber Zusammen e.V.",
-    "organizationAddress": "Kienitzer Straße 98, 1\n\n12049 Berlin\n\nRepresented by the Board of Directors:\n\nWiebke Lübben\n\nPhone: +4916098174424",
-    "email": "lieber-zusammen@posteo.de",
+    "organizationName": "FDO Solutions GmbH",
+    "organizationAddress": "Glogauer Str. 21, \n\n10999 Berlin\n\nRepresented by the business director:\n\nFelix Weth\n\nPhone: +49 (0) 178 189 6873",
+    "email": "berlin@berlinzudir.de",
     "backgroundImage": "/img/landing.jpg"
   }
 }

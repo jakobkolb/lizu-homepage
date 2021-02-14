@@ -42,7 +42,7 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>Wohnprojekt Hoppegarten</title>
+          <title>BerlinzuDir</title>
         </Head>
         <Component {...pageProps} />
       </React.Fragment>

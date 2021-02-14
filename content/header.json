@@ -1,26 +1,26 @@
 {
   "en": {
-    "blog": "Blog",
+    "blog": "Marketplace",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
-    "brand": "Lieber Zusammen"
+    "brand": ""
   },
   "de": {
-    "blog": "Neuigkeiten",
+    "blog": "Marktplatz",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
-    "brand": "Lieber Zusammen"
+    "brand": ""
   },
   "de-simple": {
-    "blog": "Blog",
+    "blog": "Marktplatz ",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
-    "brand": "Lieber Zusammen"
+    "brand": ""
   },
   "en-simple": {
-    "blog": "Blog",
+    "blog": "Marketplace",
     "telegram": "",
     "telegramTooltip": "Follow us on Telegram",
-    "brand": "Lieber Zusammen"
+    "brand": ""
   }
 }
