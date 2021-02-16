@@ -5,6 +5,6 @@ export const languageNames = {
   'en-simple': 'Simple Language'
 }
 
-export const locales = ['de', 'en']
+export const locales = ['de', 'en', 'de-simple', 'en-simple']
 
 export const defaultLocale = 'de'

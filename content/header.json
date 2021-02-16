@@ -2,25 +2,25 @@
   "en": {
     "blog": "Marketplace",
     "telegram": "",
-    "telegramTooltip": "Follow us on Telegram",
+    "telegramTooltip": "",
     "brand": ""
   },
   "de": {
     "blog": "Marktplatz",
     "telegram": "",
-    "telegramTooltip": "Follow us on Telegram",
+    "telegramTooltip": "",
     "brand": ""
   },
   "de-simple": {
     "blog": "Marktplatz ",
     "telegram": "",
-    "telegramTooltip": "Follow us on Telegram",
+    "telegramTooltip": "",
     "brand": ""
   },
   "en-simple": {
     "blog": "Marketplace",
     "telegram": "",
-    "telegramTooltip": "Follow us on Telegram",
+    "telegramTooltip": "",
     "brand": ""
   }
 }

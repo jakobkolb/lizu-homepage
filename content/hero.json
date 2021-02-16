@@ -1,23 +1,22 @@
 {
   "de": {
     "title": "BerlinzuDir",
-    "subtitle": "Online Marktplatz und Lieferservice für den lokalen Einzelhandel.",
-    "image": "/img/landing.jpg",
+    "subtitle": "Online shoppen, bei deinem Lieblingsladen aus der Nachbarschaft.",
+    "image": "/img/landing-2.jpg",
     "contactButton": "Kontakt"},
   "en": {
     "title": "BerlinzuDir",
-    "subtitle": "Online marketplace and delivery service for local retailers.",
-    "image": "/img/landing.jpg",
+    "subtitle": "Shop online, at your favorite store in your neighborhood.",
+    "image": "/img/landing-2.jpg",
     "contactButton": "Contact"},
   "de-simple": {
     "title": "BerlinzuDir",
-    "subtitle": "",
-    "image": "/img/landing.jpg",
+    "subtitle": "Online shoppen, bei deinem Lieblingsladen aus der Nachbarschaft",
+    "image": "/img/landing-2.jpg",
     "contactButton": "Kontakt"},
   "en-simple": {
     "title": "BerlinzuDir",
-    "subtitle": "",
-    "image": "/img/landing.jpg",
-    "contactButton": "Contact"}
+    "subtitle": "Shop online, at your favorite store in your neighborhood",
+    "image": "/img/landing-2.jpg",
+    "contactButton": "Contact"}   
 }
-

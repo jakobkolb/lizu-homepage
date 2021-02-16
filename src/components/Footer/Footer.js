@@ -59,6 +59,14 @@ export default function Footer(props) {
           >
             Jakob Kolb.
           </a>{' '}
+          and{' '}
+          <a
+            href="https://github.com/KilianZimmerer"
+            className={aClasses}
+            target="_blank"
+          >
+            Kilian Zimmerer.
+          </a>{' '}
         </div>
       </div>
     </footer>
