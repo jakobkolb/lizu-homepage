@@ -42,11 +42,6 @@ export default function Footer(props) {
                 {props.privacy}
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a href="/admin" className={classes.block} target="_blank">
-                {props.cms}
-              </a>
-            </ListItem>
           </List>
         </div>
         <div className={classes.right}>
@@ -57,7 +52,7 @@ export default function Footer(props) {
             className={aClasses}
             target="_blank"
           >
-            Jakob Kolb.
+            Jakob Kolb
           </a>{' '}
           and{' '}
           <a

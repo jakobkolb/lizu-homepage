@@ -27,7 +27,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Link href="http://www.berlinzudir.de" passHref>
-          <Button href="http://www.berlinzudir.de" color="transparent" className={classes.navLink}>
+          <Button href="http://www.berlinzudir.de" target="_blank" color="transparent" className={classes.navLink}>
             <Icon className={classes.icons}>book</Icon> {props.blog}
           </Button>
         </Link>
