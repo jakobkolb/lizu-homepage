@@ -1,0 +1,50 @@
+{
+  "de": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": ""
+      },
+      {
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Felix Weth",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Polina Aslamova",
+        "description": ""
+      }
+    ]
+  },
+  "en": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": ""
+      },
+      {
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Felix Weth",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Polina Aslamova",
+        "description": ""
+      }
+    ]
+  }
+}

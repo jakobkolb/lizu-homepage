@@ -3,7 +3,16 @@ import { container, title } from 'src/assets/jss/nextjs-material-kit.js'
 import imagesStyle from 'src/assets/jss/nextjs-material-kit/imagesStyles.js'
 
 const profilePageStyle = {
-  container,
+  container: {
+    ...container,
+    padding: '40px',
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    justifyContent: 'center',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row'
+  },
   profile: {
     textAlign: 'center',
     '& img': {
@@ -14,15 +23,19 @@ const profilePageStyle = {
     }
   },
   description: {
+    color: '#3C4858',
+    fontSize: "1.2rem",
+    width: '100%',
     margin: '1.071rem auto 0',
-    maxWidth: '600px',
-    color: '#999',
     textAlign: 'center !important'
   },
   name: {
     marginTop: '-80px'
   },
   ...imagesStyle,
+  centered: {
+    alignContent: 'center'
+  },
   main: {
     background: '#FFFFFF',
     position: 'relative',
@@ -36,11 +49,13 @@ const profilePageStyle = {
   },
   title: {
     ...title,
+    width: '100%',
     display: 'inline-block',
     position: 'relative',
     marginTop: '30px',
     minHeight: '32px',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    textAlign: 'center'
   },
   socials: {
     marginTop: '0',
