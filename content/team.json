@@ -4,12 +4,22 @@
       {
         "image": "/img/team/jakob.jpg",
         "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Felix Weth",
+        "description": ""
+      },
+      {
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Polina Aslamova",
+        "description": ""
       }
     ]
   },
@@ -18,55 +28,22 @@
       {
         "image": "/img/team/jakob.jpg",
         "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Felix Weth",
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      },
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      }
-    ]
-  },
-  "de-simple": {
-    "people": [
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      },
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      }
-    ]
-  },
-  "en-simple": {
-    "people": [
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      },
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/no_profile_pic.jpg",
+        "name": "Polina Aslamova",
+        "description": ""
       }
     ]
   }
