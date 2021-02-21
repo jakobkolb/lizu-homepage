@@ -18,7 +18,7 @@ export const TeamSection = (props) => {
     const classes = useStyles()
     return(
         <div>
-        <h2 className={classes.title}>Team</h2>
+        <h2 className={classes.title}>{props.title}</h2>
         <Grid container direction="row" justify="center">
             {peopleComponents}
         </Grid>
