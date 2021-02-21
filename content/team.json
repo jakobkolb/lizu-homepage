@@ -1,0 +1,73 @@
+{
+  "de": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      }
+    ]
+  },
+  "en": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      }
+    ]
+  },
+  "de-simple": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      }
+    ]
+  },
+  "en-simple": {
+    "people": [
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      },
+      {
+        "image": "/img/team/jakob.jpg",
+        "name": "Jakob Kolb",
+        "description": "Beschreibung"
+      }
+    ]
+  }
+}
