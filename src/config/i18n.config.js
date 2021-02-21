@@ -1,10 +1,8 @@
 export const languageNames = {
   de: 'Deutsch',
-  en: 'English',
-  'de-simple': 'Einfache Sprache',
-  'en-simple': 'Simple Language'
+  en: 'English'
 }
 
-export const locales = ['de', 'en', 'de-simple', 'en-simple']
+export const locales = ['de', 'en']
 
 export const defaultLocale = 'de'
