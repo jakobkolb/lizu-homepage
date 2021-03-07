@@ -9,7 +9,7 @@ import { truncateText } from '../../helpers/truncateText'
 
 const useStyles = makeStyles(styles)
 
-const InfoSection = (props) => {
+const InfoCard = (props) => {
   const [expand, setExpand] = useState(false)
   const classes = useStyles()
   const {
@@ -17,19 +17,18 @@ const InfoSection = (props) => {
   } = props.props
   const expandText = expand ? 'weniger' : '...mehr'
   return (
-    <div className={classes.section}>
+    <a onClick={() => setExpand(!expand)}>
       <Card>
         <img className={classes.imgCardTop} src={image} alt={imageCap} />
         <CardBody>
           <h2 className={classes.cardTitle}>{headline}</h2>
           <p className={classes.twoColumnText}>
             {truncateText(text, 350, !expand)}
-            <a onClick={() => setExpand(!expand)}>{expandText}</a>
           </p>
         </CardBody>
       </Card>
-    </div>
+    </a>
   )
 }
 
-export default InfoSection
+export default InfoCard
