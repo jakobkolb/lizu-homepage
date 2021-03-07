@@ -13,7 +13,6 @@ import Icon from '@material-ui/core/Icon'
 import { Apps } from '@material-ui/icons'
 
 // core components
-import CustomDropdown from 'src/components/CustomDropdown/CustomDropdown.js'
 import Button from 'src/components/CustomButtons/Button.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js'
@@ -26,7 +25,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link href="/blog" locale="de" passHref>
+        <Link href="/blog" passHref>
           <Button href="/blog" color="transparent" className={classes.navLink}>
             <Icon className={classes.icons}>book</Icon> {props.blog}
           </Button>
