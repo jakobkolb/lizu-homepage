@@ -15,9 +15,8 @@ const InfoCard = (props) => {
   const {
     content: { headline, image, imageCap, text }
   } = props.props
-  const expandText = expand ? 'weniger' : '...mehr'
   return (
-    <a onClick={() => setExpand(!expand)}>
+    <a alt={'Expand info card'} onClick={() => setExpand(!expand)}>
       <Card>
         <img className={classes.imgCardTop} src={image} alt={imageCap} />
         <CardBody>
