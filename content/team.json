@@ -21,6 +21,11 @@
         "image": "/img/team/no_profile_pic.jpg",
         "name": "Polina Aslamova",
         "description": ""
+      },
+      {
+        "image": "/img/team/judith.png",
+        "name": "Judith Rensing",
+        "description": ""
       }
     ]
   },
@@ -45,6 +50,11 @@
       {
         "image": "/img/team/no_profile_pic.jpg",
         "name": "Polina Aslamova",
+        "description": ""
+      },
+      {
+        "image": "/img/team/judith.png",
+        "name": "Judith Rensing",
         "description": ""
       }
     ]
