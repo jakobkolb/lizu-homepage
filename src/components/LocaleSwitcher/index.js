@@ -1,8 +1,6 @@
 import { useRouter } from 'next/router'
 import { locales, languageNames } from '../../config/i18n.config'
 import React from 'react'
-import { Apps } from '@material-ui/icons'
-import Link from 'next/link'
 import CustomDropdown from '../CustomDropdown/CustomDropdown'
 import styles from 'src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js'
 
@@ -30,12 +28,12 @@ const LocaleSwitcher = () => {
         color: 'transparent'
       }}
       dropdownList={locales.map((locale) => (
-          <a
-            className={classes.dropdownLink}
-            onClick={() => handleLocaleChange(locale)}
-          >
-            {languageNames[locale]}
-          </a>
+        <a
+          className={classes.dropdownLink}
+          onClick={() => handleLocaleChange(locale)}
+        >
+          {languageNames[locale]}
+        </a>
       ))}
     />
   )

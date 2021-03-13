@@ -1,8 +1,15 @@
 import Switcher from './Switcher'
 import { useEffect, useState } from 'react'
 
+import styles from 'src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js'
+import { makeStyles } from '@material-ui/core/styles'
+
+const useStyles = makeStyles(styles)
+
 export const DarkModeSwitcher = () => {
-  const [darkTheme, setDarkTheme] = useState(true)
+  const classes = useStyles()
+
+  const [darkTheme, setDarkTheme] = useState(false)
 
   const handleToggle = () => {
     setDarkTheme(!darkTheme)
@@ -30,5 +37,9 @@ export const DarkModeSwitcher = () => {
       }
     }
   }, [darkTheme])
-  return <Switcher active={darkTheme} onChange={handleToggle} />
+  return (
+    <div className={classes.navLink}>
+      <Switcher active={darkTheme} onChange={handleToggle} />
+    </div>
+  )
 }

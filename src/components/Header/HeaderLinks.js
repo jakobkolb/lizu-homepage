@@ -18,6 +18,7 @@ import Button from 'src/components/CustomButtons/Button.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js'
 import LocaleSwitcher from '../LocaleSwitcher'
+import { DarkModeSwitcher } from '../DarkModeSwitcher/DarkModeSwitcher'
 
 const useStyles = makeStyles(styles)
 
@@ -52,6 +53,9 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <LocaleSwitcher />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        {process.browser && <DarkModeSwitcher />}
       </ListItem>
     </List>
   )
