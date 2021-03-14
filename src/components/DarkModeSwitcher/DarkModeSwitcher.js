@@ -18,25 +18,28 @@ export const DarkModeSwitcher = () => {
     localStorage.setItem('theme', pref)
   }
 
-  const root = document.documentElement
-  useEffect(() => {
-    const initialColorValue = root.style.getPropertyValue(
-      '--initial-color-mode'
-    )
-    setDarkTheme(initialColorValue === 'dark')
-  }, [])
+  // dont do stuff that depends on browser environment during SSR
+  if (process.browser) {
+    const root = document.documentElement
+    useEffect(() => {
+      const initialColorValue = root.style.getPropertyValue(
+        '--initial-color-mode'
+      )
+      setDarkTheme(initialColorValue === 'dark')
+    }, [])
 
-  useEffect(() => {
-    if (darkTheme !== undefined) {
-      if (darkTheme) {
-        root.setAttribute('data-theme', 'dark')
-        storeUserSetPreference('dark')
-      } else {
-        root.removeAttribute('data-theme')
-        storeUserSetPreference('light')
+    useEffect(() => {
+      if (darkTheme !== undefined) {
+        if (darkTheme) {
+          root.setAttribute('data-theme', 'dark')
+          storeUserSetPreference('dark')
+        } else {
+          root.removeAttribute('data-theme')
+          storeUserSetPreference('light')
+        }
       }
-    }
-  }, [darkTheme])
+    }, [darkTheme])
+  }
   return (
     <div className={classes.navLink}>
       <Switcher active={darkTheme} onChange={handleToggle} />
