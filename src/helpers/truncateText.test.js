@@ -9,7 +9,7 @@ test('truncateText', () => {
     CHARS_TRUNCATE,
     'Truncate text if when truncate is true'
   )
-  assert.equals(
+  assert.equal(
     truncateText(text, CHARS_TRUNCATE, false),
     text,
     'Return entire text if truncate is false'

@@ -138,6 +138,15 @@ const headerStyle = {
     boxShadow:
       '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)'
   },
+  foreground: {
+    border: '0',
+    padding: '0.625rem 0',
+    marginBottom: '20px',
+    color: 'var(--color-primary)',
+    backgroundColor: 'var(--color-foreground)',
+    boxShadow:
+      '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)'
+  },
   drawerPaper: {
     border: 'none',
     bottom: '0',
