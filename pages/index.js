@@ -33,8 +33,8 @@ export async function getStaticProps(context) {
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
-  const infoSections = props.landingData['items'].map((info) => (
-    <InfoSection props={info} />
+  const infoSections = props.landingData['items'].map((info, index) => (
+    <InfoSection props={info} id={index} />
   ))
   return (
     <div>
@@ -45,8 +45,8 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks {...props.headerData} />}
         fixed
         changeColorOnScroll={{
-          height: 400,
-          color: 'white'
+          height: 200,
+          color: 'foreground'
         }}
         {...rest}
       />

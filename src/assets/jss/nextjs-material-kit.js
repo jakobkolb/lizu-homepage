@@ -205,7 +205,7 @@ const defaultBoxShadow = {
 }
 
 const title = {
-  color: '#3C4858',
+  color: 'var(--color-primary)',
   margin: '1.75rem 0 0.875rem',
   textDecoration: 'none',
   fontWeight: '600',
@@ -224,6 +224,7 @@ const cardLink = {
 }
 
 const cardSubtitle = {
+  color: 'var(--color-primary)',
   marginBottom: '0',
   marginTop: '-.375rem'
 }
