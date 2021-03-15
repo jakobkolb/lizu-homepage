@@ -63,6 +63,10 @@ const headerLinksStyle = (theme) => ({
       }
     }
   },
+  navSwitch: {
+    marginTop: '-10px',
+    marginBottom: '-10px'
+  },
   notificationNavLink: {
     [theme.breakpoints.down('md')]: {
       top: '0',

@@ -7,11 +7,11 @@ import Footer from 'src/components/Footer/Footer.js'
 import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
+import { InfoSection } from 'src/pages-sections/InfoSection/InfoSection.jsx'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
 import { loadContentWithLocale } from '../src/helpers/loadContent'
-import { InfoSection } from '../src/pages-sections/InfoSection/InfoSection'
 
 const dashboardRoutes = []
 
@@ -42,8 +42,8 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks {...props.headerData} />}
         fixed
         changeColorOnScroll={{
-          height: 400,
-          color: 'white'
+          height: 200,
+          color: 'foreground'
         }}
         {...rest}
       />

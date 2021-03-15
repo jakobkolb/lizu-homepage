@@ -28,3 +28,22 @@
 @import "src/assets/scss/plugins/plugin-nouislider";
 @import "src/assets/scss/plugins/plugin-react-datetime";
 @import "src/assets/scss/plugins/plugin-react-slick";
+
+:root {
+  --color-primary-accent: #5b34da;
+  --color-primary: #000;
+  --color-background: #ffffff;
+  --color-foreground: #ffffff;
+}
+
+[data-theme="dark"] {
+  --color-primary-accent: #9d86e9;
+  --color-primary: #fff;
+  --color-background: #0c0c0c;
+  --color-foreground: #151515;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}

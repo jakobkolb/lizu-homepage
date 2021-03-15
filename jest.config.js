@@ -2,7 +2,7 @@ module.exports = {
   roots: ['<rootDir>/src', '<rootDir>/pages', '<rootDir>/content'],
   moduleDirectories: ['node_modules', './'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
-  setupFiles: ['<rootDir>/tests/setup.js'],
+  setupFiles: ['<rootDir>/tests/setup.js', 'jest-localstorage-mock'],
   setupFilesAfterEnv: ['<rootDir>/tests/setupAfterEnv.js'],
   testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
   testPathIgnorePatterns: [
