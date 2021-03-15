@@ -25,7 +25,13 @@ export const DarkModeSwitcher = () => {
       const initialColorValue = root.style.getPropertyValue(
         '--initial-color-mode'
       )
-      setDarkTheme(initialColorValue === 'dark')
+      const savedUserPreference = localStorage.getItem('theme')
+
+      setDarkTheme(
+        savedUserPreference
+          ? savedUserPreference === 'dark'
+          : initialColorValue === 'dark'
+      )
     }, [])
 
     useEffect(() => {
