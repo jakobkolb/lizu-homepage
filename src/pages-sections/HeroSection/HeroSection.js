@@ -17,7 +17,7 @@ const HeroSection = (props) => {
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <h1 className={classes.title}>{title}</h1>
-            <h4>{subtitle}</h4>
+            <h4 className={classes.subtitle}>{subtitle}</h4>
             <br />
             <Button color="primary" size="lg" href="#contact">
               <i className="fas" />
