@@ -1,15 +1,13 @@
 import React from 'react'
 
-import { DarkModeSwitcher } from './DarkModeSwitcher'
+import Switcher from './Switcher'
 
 export default {
   title: 'Components/DarkModeSwitcher',
-  component: DarkModeSwitcher
+  component: Switcher
 }
 
-localStorage.setItem('theme', 'dark')
-
-const Template = (args) => <DarkModeSwitcher {...args} />
+const Template = (args) => <Switcher {...args} />
 
 export const Active = Template.bind({})
 Active.args = {

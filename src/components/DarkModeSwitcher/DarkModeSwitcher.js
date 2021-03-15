@@ -18,7 +18,7 @@ export const DarkModeSwitcher = () => {
     localStorage.setItem('theme', pref)
   }
 
-  // dont do stuff that depends on browser environment during SSR
+  // don't do stuff that depends on browser environment during SSR
   if (process.browser) {
     const root = document.documentElement
     useEffect(() => {
