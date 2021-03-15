@@ -8,6 +8,8 @@ import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
+import AboutSection from 'src/pages-sections/AboutSection/AboutSection.js'
+
 
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
 import {loadContentWithLocale} from '../src/helpers/loadContent'
@@ -25,6 +27,7 @@ export async function getStaticProps(context) {
         headerData: await loadContentWithLocaleSet('content/header.json'),
         footerData: await loadContentWithLocaleSet('content/footer.json'),
         teamData: await loadContentWithLocaleSet('content/team.json'),
+        aboutData: await loadContentWithLocaleSet('content/about.json'),
         contactData: await loadContentWithLocaleSet('content/contact.json')
     }
   }
@@ -50,9 +53,12 @@ export default function LandingPage(props) {
       <HeroSection {...props.heroData} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-            <div id="team">
-                <TeamSection {...props.teamData}/>
-            </div>
+          <div id="about" className={classes.section}>
+            <AboutSection {...props.aboutData}/>
+          </div>
+          <div id="team">
+              <TeamSection {...props.teamData}/>
+          </div>
           <div id="contact">
             <ContactSection {...props.contactData} />
           </div>
