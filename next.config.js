@@ -16,7 +16,7 @@ module.exports = withPlugins([[withSass], [withImages]], {
   },
   target: "serverless",
   i18n: {
-    locales: ['de', 'en', 'de-simple', 'en-simple'],
+    locales: ['de', 'en'],
     defaultLocale: 'de'
   },
   distDir: 'build',

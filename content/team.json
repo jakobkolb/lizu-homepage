@@ -1,72 +1,61 @@
 {
   "de": {
+    "title": "Team",
     "people": [
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/judith.png",
+        "name": "Judith Rensing",
+        "description": ""
       },
       {
         "image": "/img/team/jakob.jpg",
         "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "description": ""
+      },
+      {
+        "image": "/img/team/polina.png",
+        "name": "Polina Aslamova",
+        "description": ""
+      },
+      {
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
+      },
+      {
+        "image": "/img/team/felix.jpg",
+        "name": "Felix Weth",
+        "description": ""
       }
     ]
   },
   "en": {
+    "title": "Team",
     "people": [
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/polina.png",
+        "name": "Polina Aslamova",
+        "description": ""
       },
       {
         "image": "/img/team/jakob.jpg",
         "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/judith.png",
+        "name": "Judith Rensing",
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/kilian.jpg",
+        "name": "Kilian Zimmerer",
+        "description": ""
       },
       {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      }
-    ]
-  },
-  "de-simple": {
-    "people": [
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      },
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      }
-    ]
-  },
-  "en-simple": {
-    "people": [
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
-      },
-      {
-        "image": "/img/team/jakob.jpg",
-        "name": "Jakob Kolb",
-        "description": "Beschreibung"
+        "image": "/img/team/felix.jpg",
+        "name": "Felix Weth",
+        "description": ""
       }
     ]
   }
