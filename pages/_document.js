@@ -1,4 +1,5 @@
 import React from 'react'
+import { blockingSetInitialColorMode } from '../src/helpers/setInitialColorMode'
 import Document, { Head, Main, NextScript, Html } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/styles'
 
@@ -31,7 +32,11 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <div id="page-transition"></div>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: blockingSetInitialColorMode
+            }}
+          />
           <Main />
           <NextScript />
         </body>
