@@ -1,6 +1,9 @@
 import { container, title } from 'src/assets/jss/nextjs-material-kit.js'
 
 const landingPageStyle = {
+  section: {
+    padding: '70px 0'
+  },
   html: {
     scrollBehavior: 'smooth'
   },

@@ -14,7 +14,7 @@ const useStyles = makeStyles(styles)
 export const AboutSection = (props) => {
     const classes = useStyles()
     return(
-        <div className={classes.container + ' ' + classes.section}>
+        <div className={classes.container}>
             <Card>
                 <CardBody>
                     <h2 className={classes.title}>{props.title}</h2>
