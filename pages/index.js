@@ -28,6 +28,7 @@ export async function getStaticProps(context) {
         footerData: await loadContentWithLocaleSet('content/footer.json'),
         teamData: await loadContentWithLocaleSet('content/team.json'),
         aboutData: await loadContentWithLocaleSet('content/about.json'),
+        visionData: await loadContentWithLocaleSet('content/vision.json'),
         contactData: await loadContentWithLocaleSet('content/contact.json')
     }
   }
@@ -55,6 +56,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <div id="about" className={classes.section}>
             <AboutSection {...props.aboutData}/>
+            <AboutSection {...props.visionData}/>
           </div>
           <div id="team">
               <TeamSection {...props.teamData}/>
