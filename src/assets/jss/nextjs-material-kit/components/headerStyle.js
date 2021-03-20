@@ -17,7 +17,6 @@ const headerStyle = {
   appBar: {
     display: 'flex',
     border: '0',
-    borderRadius: '3px',
     padding: '0.625rem 0',
     marginBottom: '20px',
     color: '#555',
@@ -148,6 +147,8 @@ const headerStyle = {
       '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)'
   },
   drawerPaper: {
+    color: 'var(--color-primary)',
+    background: 'var(--color-foreground)',
     border: 'none',
     bottom: '0',
     transitionProperty: 'top, bottom, width',

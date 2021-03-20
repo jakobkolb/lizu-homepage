@@ -61,23 +61,13 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   })
-  const brandComponent = (
-    <Link href="/" as="/">
-      <Button className={classes.title}>{brand}</Button>
-    </Link>
-  )
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
-        {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
-          {leftLinks !== undefined ? (
-            <Hidden smDown implementation="css">
-              {leftLinks}
-            </Hidden>
-          ) : (
-            brandComponent
-          )}
+          <Link href="/" as="/">
+            <Button className={classes.title}>{brand}</Button>
+          </Link>
         </div>
         <Hidden smDown implementation="css">
           {rightLinks}
@@ -126,7 +116,8 @@ Header.propTypes = {
     'transparent',
     'white',
     'rose',
-    'dark'
+    'dark',
+    'foreground'
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
@@ -150,7 +141,8 @@ Header.propTypes = {
       'transparent',
       'white',
       'rose',
-      'dark'
+      'dark',
+      'foreground'
     ]).isRequired
   })
 }

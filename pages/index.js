@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer/Footer.js'
 import HeaderLinks from 'src/components/Header/HeaderLinks.js'
 
 import styles from 'src/assets/jss/nextjs-material-kit/pages/landingPage.js'
-import InfoSection from 'src/pages-sections/InfoSection/InfoSection.js'
+import { InfoSection } from 'src/pages-sections/InfoSection/InfoSection.jsx'
 import ContactSection from 'src/pages-sections/ContactSection/ContactSection.js'
 
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
@@ -33,9 +33,6 @@ export async function getStaticProps(context) {
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
-  const infoSections = props.landingData['items'].map((info, index) => (
-    <InfoSection props={info} id={index} />
-  ))
   return (
     <div>
       <Header
@@ -53,7 +50,7 @@ export default function LandingPage(props) {
       <HeroSection {...props.heroData} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          {infoSections}
+          <InfoSection items={props.landingData.items} />
           <div id="contact">
             <ContactSection {...props.contactData} />
           </div>

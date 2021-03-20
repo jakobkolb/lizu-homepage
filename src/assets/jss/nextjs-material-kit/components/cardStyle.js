@@ -15,7 +15,12 @@ const cardStyle = {
     minWidth: '0',
     wordWrap: 'break-word',
     fontSize: '.875rem',
-    transition: 'all 300ms linear'
+    transition: 'all 300ms linear',
+    '&:hover': {
+      cursor: 'pointer',
+      boxShadow:
+        '0 6px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.12)'
+    }
   },
   cardPlain: {
     background: 'transparent',
