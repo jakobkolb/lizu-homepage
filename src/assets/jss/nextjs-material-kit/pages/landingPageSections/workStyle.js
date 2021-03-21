@@ -7,15 +7,22 @@ const workStyle = {
   title: {
     ...title,
 
-    color: '#3d3d3d',
+    color: '#3C4858',
     marginBottom: '50px',
     marginTop: '30px',
     minHeight: '32px',
     textDecoration: 'none',
     textAlign: 'center'
   },
+
+  subtitle: {
+    color: 'var(--text-color)',
+    fontSize: '24px',
+    textAlign: 'center'
+  },
   description: {
-    color: '#242424',
+    color: 'var(--text-color)',
+    fontSize: 'var(--text-size)',
     textAlign: 'center'
   },
   textCenter: {

@@ -3,24 +3,14 @@
     "blog": "Marketplace",
     "telegram": "",
     "telegramTooltip": "",
-    "brand": ""
+    "brand": "BerlinzuDir",
+    "faq": "FAQ"
   },
   "de": {
     "blog": "Marktplatz",
     "telegram": "",
     "telegramTooltip": "",
-    "brand": ""
-  },
-  "de-simple": {
-    "blog": "Marktplatz ",
-    "telegram": "",
-    "telegramTooltip": "",
-    "brand": ""
-  },
-  "en-simple": {
-    "blog": "Marketplace",
-    "telegram": "",
-    "telegramTooltip": "",
-    "brand": ""
+    "brand": "BerlinzuDir",
+    "faq": "FAQ"
   }
 }

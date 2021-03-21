@@ -66,6 +66,9 @@ const headerStyle = {
       background: 'transparent'
     }
   },
+  brand: {
+    fontWeight: '400'
+  },
   appResponsive: {
     margin: '20px 10px'
   },
@@ -77,57 +80,11 @@ const headerStyle = {
       0.46
     )}`
   },
-  info: {
-    backgroundColor: infoColor,
-    color: '#FFFFFF',
-    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
-      infoColor,
-      0.46
-    )}`
-  },
-  success: {
-    backgroundColor: successColor,
-    color: '#FFFFFF',
-    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
-      successColor,
-      0.46
-    )}`
-  },
-  warning: {
-    backgroundColor: warningColor,
-    color: '#FFFFFF',
-    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
-      warningColor,
-      0.46
-    )}`
-  },
-  danger: {
-    backgroundColor: dangerColor,
-    color: '#FFFFFF',
-    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
-      dangerColor,
-      0.46
-    )}`
-  },
-  rose: {
-    backgroundColor: roseColor,
-    color: '#FFFFFF',
-    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
-      roseColor,
-      0.46
-    )}`
-  },
   transparent: {
     backgroundColor: 'transparent !important',
     boxShadow: 'none',
     paddingTop: '25px',
     color: '#FFFFFF'
-  },
-  dark: {
-    color: '#FFFFFF',
-    backgroundColor: '#212121 !important',
-    boxShadow:
-      '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)'
   },
   white: {
     border: '0',

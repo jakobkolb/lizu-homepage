@@ -16,12 +16,8 @@
 
 */
 import React from 'react'
-import ReactDOM from 'react-dom'
 import App from 'next/app'
 import Head from 'next/head'
-import Router from 'next/router'
-
-import PageChange from 'src/components/PageChange/PageChange.js'
 
 import 'src/assets/scss/nextjs-material-kit.scss?v=1.1.0'
 

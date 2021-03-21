@@ -28,3 +28,14 @@
 @import "src/assets/scss/plugins/plugin-nouislider";
 @import "src/assets/scss/plugins/plugin-react-datetime";
 @import "src/assets/scss/plugins/plugin-react-slick";
+
+
+:root {
+  --text-size: 18px;
+  --text-color: #3C4858;
+}
+
+body {
+  font-size: var(--text-size);
+  color: var(--text-color)
+}

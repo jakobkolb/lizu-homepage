@@ -19,9 +19,9 @@ export const AboutSection = (props) => {
                 <CardBody>
                     <h2 className={classes.title}>{props.title}</h2>
                     <h4 className={classes.textCenter}>{props.subtitle}</h4>
-                    <ReactMarkdown className={classes.description}>
+                    <p className={classes.description}>
                         {props.text}
-                    </ReactMarkdown>
+                    </p>
                 </CardBody>
             </Card>
         </div>

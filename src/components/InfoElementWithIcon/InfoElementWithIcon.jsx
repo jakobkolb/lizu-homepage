@@ -2,42 +2,41 @@ import React from 'react'
 import Image from 'next/image'
 import GridContainer from "../Grid/GridContainer";
 import PropTypes from 'prop-types'
+import ReactMarkdown from "react-markdown";
 import {makeStyles} from '@material-ui/core/styles'
 import classNames from 'classnames'
-import styles from "src/assets/jss/nextjs-material-kit/pages/profilePage.js"
+import styles from "src/assets/jss/nextjs-material-kit/components/infoElementWithIcon"
 import GridItem from "../Grid/GridItem";
 
 const useStyles = makeStyles(styles)
 
-export const InfoElement = (props) => {
+export const InfoElementWithIcon = (props) => {
     const classes = useStyles()
     const imageClasses = classNames(
-        classes.imgRaised,
-        classes.imgRoundedCircle,
         classes.imgFluid,
-        classes.centered
+        classes.imgCentered
     )
     return (
         <div className={classes.container}>
             <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12}>
-                    <div className={classes.centered}>
-                        <img className={imageClasses} src={props.image} width={200} height={200}/>
+                    <div className={classes.title}>
+                        <img className={imageClasses} src={props.image} width={110} height={110}/>
                     </div>
                     <div>
-                        <h3 className={classes.title}>{props.name}</h3>
+                        <h3 className={classes.title}>{props.title}</h3>
                     </div>
-                    <div className={classes.description}>
+                    <p className={classes.description}>
                         {props.description}
-                    </div>
+                    </p>
                 </GridItem>
             </GridContainer>
         </div>
     )
 }
 
-InfoElement.propTypes = {
-    imagePath: PropTypes.string,
-    headerText: PropTypes.string,
-    bodyText: PropTypes.string
+InfoElementWithIcon.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string
 }
