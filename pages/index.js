@@ -38,7 +38,6 @@ export async function getStaticProps(context) {
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
-    console.log(props)
   return (
     <div>
       <Header

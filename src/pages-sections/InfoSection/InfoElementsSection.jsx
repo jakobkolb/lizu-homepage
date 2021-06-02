@@ -10,7 +10,6 @@ const useStyles = makeStyles(styles)
 export const InfoElementsSection = (props) => {
     const classes = useStyles()
     const peopleComponents = props.people.map( (person, index) => <Person id={index} {...person}/>)
-    console.log(props)
     return(
         <div className={classes.section}>
             <h2 className={classes.title}>{props.title}</h2>
